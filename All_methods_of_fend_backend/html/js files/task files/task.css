@@ -1,0 +1,30 @@
+#some {
+    margin-left: 500px;
+    border: 5px solid black;
+    height:50px;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+   }
+#body{
+    background-color: rgb(234, 17, 111);
+}
+/* ul li{ float: left;
+    list-style-type: none;
+    width: 100px;
+    background-color:rgb(28, 232, 239);
+         text-align: center;
+         margin:0;
+         padding: 10px 0;
+ }
+     ul li a{
+         display: inline-block;
+         text-decoration:none;
+         color:white;
+       
+     }
+     ul li:hover {
+         background-color: deeppink;
+
+     } */
+     

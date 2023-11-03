@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+<style>
+    div.gallary{
+        margin:5px;
+        border:2px solid black;
+        float: left;
+        width: 300px;
+    }
+    div.desc{
+        width:300px ;
+        height: 150px;
+    }
+    #next{
+     width: 46px;
+     height: 44px;
+     background:url(img_submit.gif)-91px 0;
+    }
+    .content{
+        
+      list-style-type: none;
+    }
+.content:hover{
+    display: inline-block;
+    background-color: gray;    
+    }
+    a[target]{
+        background-color:chartreuse;
+    }
+    a[target=_top]{
+        background-color:cyan ;
+    }
+</style>
+</head>
+<body>
+    <div class="gallary">
+        <a target="_blank" href="husky.image.jpg">
+            <img src="husky.image.jpg"alt="dog img" width="300px"height="300px">
+        </a>
+        <div class="desc">Siberians are high-energy and extremely athletic, and they can be expert escape artists. This can make them very challenging to keep as pets. Because they love to run long distances, for their own good, they should never be off-lead in unfenced areas—and they should be microchipped in case they ever are lost</div>
+    </div>
+    <img id="next" src="img_submit.gif"alt="go img"><br>
+<ul class="content">
+    <li id="home"><a href="https://www.w3schools.com/"><img src="img_submit.gif"alt="go img">
+    </a></li></ul>
+    <h2>css [attributes]selector</h2>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <h2>css [attributes="value"]selector</h2>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <h2>CSS [attribute~="value"] Selector</h2>
+
+
+
+
+</body>
+</html>

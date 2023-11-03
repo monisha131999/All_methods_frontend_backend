@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex items</title>
+    <style>
+        .flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.order-Property {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.order-Property >div {
+  background-color:darkmagenta;
+  color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-grow {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-grow > div {
+  background-color: deeppink;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-shrink {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-shrink>div {
+  background-color:burlywood;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-basis {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-basis > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-Property {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-Property>div {
+  background-color:cadetblue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.align-self-center {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.align-self-center > div {
+  background-color:aqua;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.align-self-flex-startend {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.align-self-flex-startend > div {
+  background-color:crimson;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Flexible Items</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div> 
+        <div>4</div>
+      </div>
+      <h1>The item properties</h1>
+      <ul>
+        <li>order</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basic</li>
+        <li>flex</li>
+        <li>align-self</li>
+    </ul>
+    <h1>The order Property</h1>
+    <div class="order-Property">
+        <div style="order: 2">1</div>
+        <div style="order: 3">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+      </div>
+      <h1>The flex-grow Property</h1>
+      <div class="flex-grow">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 5">2</div>
+        <div style="flex-grow: 8">3</div>
+      </div>
+      <h1>The flex-shrink Property</h1>
+      <div class="flex-shrink">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <h1>The flex-basis Property</h1>
+      <div class="flex-basis">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+      </div>
+      <h1>The flex Property</h1>
+      <div class="flex-Property">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+      </div>
+      <h1>The align-self Property</h1>
+      <div class="align-self-center">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+      </div>
+      <h1>The align-self: flex-start</h1>
+      <div class="align-self-flex-startend">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+      </div>
+      
+</body>
+</html>

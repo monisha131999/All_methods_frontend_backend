@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+    .item1{ 
+            grid-area: head;
+        }
+        .item2{
+            grid-area: nav;
+        }
+        .item3{
+             grid-area: content;
+        }
+        .item4{
+            grid-area: maincontent;
+        }
+        .item5{
+            grid-area: content1;
+        }
+        .item6{
+            grid-area: footer;
+        }
+.container{
+    background-color:rgb(28, 219, 233);
+    display:inline-grid;
+    grid-template-areas: 'head head head head head' 
+'nav nav nav nav nav'
+'content maincontent maincontent maincontent content1'
+'footer footer footer footer footer';
+column-gap: 10px;
+row-gap: 10px;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 4fr 1fr ;
+width: 100vw;
+height:100vh;} 
+.container div{
+    background-color: pink;
+    border: 1px solid black;
+    text-align: center;
+}
+*{margin:0;padding:0;}
+ul li{ float:left;
+       list-style-type: none;
+       width: 250px;
+       background-color:rgb(28, 232, 239);
+            text-align: center;
+            margin: 17px;
+            padding: 10px 0;
+        }
+        ul li a{
+            display: inline-block;
+            text-decoration:none;
+            color:white;
+            /* padding: 20px,0; */
+        }
+        ul li:hover{
+            background-color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="item1"><img src="Royal_Enfield_logo_new.svg" width="150px"height="150px">
+            </div>
+            <div class="item2">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Content</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="item3">In 1990, Royal Enfield collaborated with the Eicher Group, an automotive company in India, and merged with it in 1994.[9] Apart from bikes, Eicher Group is involved in the production and sales of commercial vehicles and automotive gears. Although Royal Enfield experienced difficulties in the 1990s, and ceased motorcycle production at their Jaipur factory in 2002,[10] by 2013 the company opened a new primary factory in the Chennai suburb of Oragadam on the strength of increased demand for its motorcycles. This was followed in 2017 by the inauguration of another new factory of a similar size to the facility at Oragadam (capacity 600,000 vehicles per year) at Vallam Vadagal. The original factory at Tiruvottiyur became secondary, and continues to produce some limited-run motorcycle models.</div>
+            <div class="item4">Royal Enfield is an Indian multinational motorcycle manufacturing company headquartered in Chennai, Tamil Nadu, India. The Royal Enfield brand, including its original English heritage, is the oldest global motorcycle brand in continuous production.[3] The company operates manufacturing plants in Chennai in India.The first Royal Enfield motorcycle was built in 1901 by The Enfield Cycle Company of Redditch, Worcestershire, England, which was responsible for the design and original production of the Royal Enfield Bullet, the longest-lived motorcycle design in history.[4] Licensed from the original English Royal Enfield by the indigenous Indian Madras Motors, the company is now a subsidiary of Eicher Motors, an Indian automaker.[5] The company makes classic-looking motorcycles including the Royal Enfield Bullet, Classic 350, Royal Enfield Thunderbird, Meteor 350, Classic 500, Interceptor 650, Continental and many more. Royal Enfield also make adventurous and offroading motorcycles like Royal Enfield Himalayan. Their motorcycles are equipped with single-cylinder and twin-cylinder engines.</div>
+            <div class="item5">Type	Public
+                Industry:Automotive
+                Founded	1955; 68 years ago (as Enfield Motors)
+                Headquarters:	Chennai, India[1]
+                Areas server:Worldwide
+                Key people:B Govindarajan (CEO)
+                Products:Royal Enfield Bullet, Royal Enfield Classic, Royal Enfield Thunderbird, Royal Enfield Meteor 350, Royal Enfield Himalayan Scram 411, Royal Enfield Hunter, Royal Enfield Himalayan, Royal Enfield Interceptor 650, Royal Enfield Continental GT, Royal Enfield Hunter 350, Royal Enfield Super Meteor 650
+                Production output:Increase 846,000 units (2018)[2]
+                Revenue	Increase:₹8,965.00 crore (US$1.1 billion) (2018)[2]
+                Operating income:Increase ₹2,808.00 crore (US$350 million) (2018)[2]
+                Net income:	Increase ₹1,960 crore (US$250 million) (2018)[2]
+                Parent:	Eicher Motors
+                Subsidiaries:	
+                Royal:Enfield North America
+                Royal:Enfield UK
+                Royal:Enfield Brazil
+                Royal:Enfield Thailand
+                </div>
+            <div class="item6">Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+                Privacy policy,About Wikipedia,Disclaimers,Contact Wikipedia,Mobile view,Developers,Statistics,Cookie statement.<br><br>
+<img src="Royal_Enfield_logo_new.svg"width="150px"height="150px">
+            </div>
+             </div>
+    </div>
+</body>
+</html>

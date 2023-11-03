@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+
+.slider{
+    width:800px;
+    height:500px;
+    border-radius: 10px ;
+    overflow: hidden;
+}
+.slides{
+    width:500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide- img{
+    width:20%;
+    transition: 2s;
+}
+.slide- img img{
+    width:800px;
+    height:500px;
+}
+.manual{
+    position:absolute;
+    width:800px;
+    height: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manuals{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius:  10px;
+    cursor: pointer;
+    height: 5px;
+    transition: 1s;
+}
+.manuals:not(:last-child){
+    margin-right:40px ;
+    /* align-items: center; */
+}
+.manuals:hover{
+    background: red;
+}
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left:-20%;
+}
+#radio3:checked ~ .first{
+        margin-left:-40%;
+}
+</style>
+    
+</head>
+<body>
+    <div  class="slider">
+        <div class="slides">
+            <input type="radio" id="radio1">
+            <input type="radio" id="radio2">
+            <input type="radio" id="radio3">
+            
+            <div class="slide- img first">
+                <img src="image1.png">
+            </div>
+           
+            <div class="slide- img">
+                <img src="image2.jpg" >
+            </div>
+            
+            <div class="slide- img">
+                <img src="image3.jpg" >
+            </div>
+            <div class="auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+            </div>
+        </div>
+        <div class="manual">
+            <label for="radio1" class="manuals"></label>
+            <label for="radio2" class="manuals"></label>
+            <label for="radio3" class="manuals"></label>
+        </div>
+      </div>
+</body>
+</html>

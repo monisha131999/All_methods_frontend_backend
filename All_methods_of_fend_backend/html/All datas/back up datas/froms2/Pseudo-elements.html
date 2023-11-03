@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+    <style>p::first-line {
+        color:violet;
+        font-variant: small-caps;
+      }
+      div::first-letter {
+  color:green;
+  font-size: xx-large;
+}
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}  
+.first::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+.first::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+h3::before{
+    content: url(smiliey\ img.jpg);
+    width:20%;
+    height: 30px;
+}
+::marker { 
+  color: yellowgreen;
+  font-size: 23px;
+}
+
+</style>
+</head>
+<body>
+    <h1>what is PSEUDO-CLASS</h1>
+    <div>what are all the elements are inside the body that is <mark>selector</mark>,then class name r <mark>PSEUDO-CLASS</mark>and then property means <mark>(style)</mark>and value means we give the colors and use all the styles.</div>       
+<h1>The ::first-line Pseudo-element</h1>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<h1>The ::first-letter Pseudo-element</h1>
+<div>Monisha palanivel</div>
+<h1>Pseudo-elements and HTML Classes</h1>
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+<h1>Multiple Pseudo-elements</h1>
+<p class="first">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, vel cumque dicta porro veritatis fugit reiciendis magni soluta sed ratione distinctio asperiores voluptates placeat voluptate pariatur natus tenetur temporibus repudiandae.</p>
+<h1>CSS - The ::before Pseudo-element,also after img</h1>
+<h3>this is the img</h3>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio mollitia hic quos non reiciendis aut corrupti possimus officia amet qui praesentium deserunt sunt pariatur, ex consequatur dolore dolorum doloribus labore.</div>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+  <h1>selection</h1>
+<p>if we select the img we change the style will be show the tab</p>
+</body>
+</html>

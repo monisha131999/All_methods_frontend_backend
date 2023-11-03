@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    background-color:rgb(26, 247, 236);
+}
+.container{
+    width:80%;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.input-section{
+    display: flex;
+}
+.input-section input{
+    flex:1;
+    padding:5px;
+
+}
+.input-section button{
+    background-color: rgba(219, 131, 80, 0.838);
+    border:unset;
+    color:white;
+}
+.list-section ul{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.list-section ul li{
+border: 1px solid ;
+display: flex;
+justify-content: space-between;
+/* padding: 10px; */
+align-items: center;
+}
+.list-section ul li .done{
+text-decoration:line-through ;
+}
+
+.list-section ul li .close{
+    background-color: rgb(204, 9, 139);
+    color: white;
+    padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #todo{
+    width: 500px;
+    height: 25px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 15px;
+    background-color: aqua;
+}
+#myDIV{
+    text-align: center;
+    padding: 30px;
+    background-color: deeppink;
+
+} */

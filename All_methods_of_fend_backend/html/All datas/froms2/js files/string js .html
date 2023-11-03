@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <h1>js string </h1>
+ <p> string ahh yepadi denoted panuvom na ("double quotes",'single qoutes')use panuvom rendumey string than</p>
+<pre>
+let name="monisha";
+console.log(name);</pre>
+<p>"double qoutes kulla monisha nu kuduthathu nala athu apadiye vanthuruchi 5string yepovum double quotes or single qoutes la (kuduthalum same ans than varum)than tharanum" </p>
+<h1>There are 18 types of string</h1>
+<ul>
+    <li>string length</li>
+    <li>string slice()</li>
+    <li>string substring()</li>
+    <li>string substr()</li>
+    <li>string replace()</li>
+    <li>string replaceall()</li>
+    <li>string to Uppercase()</li>
+    <li>string to Lowercase</li>
+    <li>string concat</li>
+    <li>string trim()</li>
+    <li>string trimStart()</li>
+    <li>string trimEnd()</li>
+    <li>string padStart()</li>
+    <li>String padEnd()</li>
+    <li>String charAt()</li>
+    <li>String charCodeAt()</li>
+    <li>String split()</li>
+</ul>
+<h1>string length find out method</h1>
+<i>example</i>
+<pre>let name3="monisha";
+console.log(name3.length);</pre>
+<p>(.length nu kudutha namba kudutha value oda length ahh find out panunum)</p>
+<h1> js string slice()</h1>
+<i>Example</i>
+<pre>let name="moni anbu mano";
+    let text=name.slice(6);
+    console.log(text);</pre>
+<mark>(.slice) is denoted by value oda length calulate panum (namaku paticular word la eruthu madum venuma antha position oda num ahh kuduthu apply panikalam ethula free space um oru position na calulate panum)</mark>
+ethula namba value 6 nu kuduthu eruken given string (moni anbu mano)value6 nu kuduthathunala (anbu mano) execute aduchi
+edula (-negative value kuda use panikalam)
+<h1>js substring</h1>
+<p>substring()is similar to slice() is denoted by value oda length calulate panum (namaku paticular word la eruthu madum venuma antha position oda num ahh kuduthu apply panikalam ethula free space um oru position na calulate panum)</mark>
+    ethula namba value 6 nu kuduthu eruken given string (moni anbu mano)value6 nu kuduthathunala (anbu mano) execute aduchi
+    edula (-negative value kuda use panikalam)</p>
+<i>Example</i>
+<pre>let str="apple,banana,mango";
+    let text=str.substring(7,13);
+console.log(text2);</pre>
+<h1>js substr</h1>
+(substr)=is denoted by value oda length calulate panum (namaku paticular word la eruthu madum venuma antha position oda num ahh kuduthu apply panikalam ethula free space um oru position na calulate panum)</mark>
+ethula namba value 6 nu kuduthu eruken given string (moni anbu mano)value6 nu kuduthathunala (anbu mano) execute aduchi
+edula (-negative value kuda use panikalam)
+<pre>let name="moni anbu mano";
+    let text=name.substr(6);
+    console.log(text);</pre>
+<h1>replace()</h1>
+<p>paticular word ahh yeduthuthu new ahh oru word ahh replace pananum na (.replace nu use pananum)</p>
+<pre>let name="moni anbu mano";
+    let text=name.replace("anbu","rezula");
+    console.log(text);</pre>
+<p><pre>
+        ethula two method eruku(replace la)
+        onu(/g,/i)
+    (/g)=na namba kudutha string la yenga yenga yellam replace panura word eruko anga yellam namba new ahh kudutha name replace agum </pre></p>
+<pre><h1>Replace (/g method)</h1>
+let name7="moni anbu mano anbu";
+    let text4=name7.replace(/anbu/g,"rezula");
+    console.log(text4);</pre>
+   epo ethula yenga yenga yellam anbu nu eruko anga yelam rezulanu replace agum 
+<h1>(/i replace method)</h1> 
+    <pre>
+        let name7="moni anbu mano anbu";
+    let text4=name7.replace(/anbu/i,"rezula");
+    console.log(text4);</pre>
+    ethula one place la madum than change agum anbu pathila rezula nu
+ <h1>replaceall</h1>   
+ <p> method (namba yentha word ahh(replace all)kuduthu new word ahh new word kuduthu replace panuromo antha word yenga yellam eruko anga yellam replace agum)more over (/g) method</p>
+<pre>
+    let name7="moni anbu mano anbu";
+    let text4=name7.replaceAll("anbu","rezula");
+    console.log(text4);</pre>
+<h1>to Uppercase</h1>
+<p>uppercase na small letter la string erutha captital letter la change agum</p>
+<!-- to uppercase -->
+<pre>let name10="monisha palanivel"
+let result=name10.toUpperCase();
+console.log(result);</pre>
+<h1>to Lowercase</h1>
+<p>capital letter la string erutha small letter la change gum</p>
+<!-- to lowercase -->
+<pre>let name10="MONISHA PALANIVEL"
+    let result=name10.tolowerCase();
+    console.log(result);</pre>
+<h1>string concat</h1>
+<p>concat means to join the two r more strings(rendu name ium join panurathukaka use panurom) </p>
+<p>ethula two methods eruku simple ahh (concat()) nu madum use panalam or (concat() + )num use panalam</p>
+<i>example</i>
+<pre>
+    let name12="moni";
+    let name13="sha";
+    console.log(name12.concat(name13));</pre>
+<h1>concat()plus operators</h1>
+<p>The concat() method can be used instead of the plus operator. These two lines do the same:</p>
+<pre>text7="moni"+"   "+"sha";
+    text7="moni".concat("    ",sha);</pre>
+<h1>the trim() method</h1>
+<p>The trim() method removes whitespace from both sides of a string:</p>
+<pre>let name14="   moni        ";
+console.log(name14);
+let result2=name14.trim();
+console.log(result2);</pre>
+<h1>length calculate panuvom</h1>
+<pre>let name14="   moni        ";
+    console.log(name14.length);
+    let result2=name14.trim();
+    console.log(result2.length);</pre>
+<h1>js string trim start()</h1>
+<p>added the String method trimStart() to JavaScript.The trimStart() method works like trim(), but removes whitespace only from the start of a string.<mark>(fornt la erukura white shapes remove agum)</mark></p>
+<pre>let text7 = "     Hello World!     ";
+    console.log(text7.length);
+        let result4=text7.trimStart();
+        console.log(result4);</pre>
+<h1>The trimEnd() method</h1>
+<p>works like trim(), but removes whitespace only from the end of a string.<mark>(end la erukura white shapes remove agum)</mark></p>
+<pre>
+let text8= "     Hello World!     ";
+console.log(text8.length);
+    let result5=text8.trimEnd();
+    console.log(result5);</pre>
+<h1>js string padding</h1>
+<p>padStart() and padEnd() to support padding at the beginning and at the end of a string.</p>
+<p>there r two types of method</p>
+<ul>
+    <li>padstart()</li>
+    <li>padend()</li>
+</ul>
+<h1> string padstart()</h1>
+<p>The padStart() method pads a string from the start.It pads a string with another string (multiple times) until it reaches a given length.</p>
+ethula pathicular num ku munadi sum datas add pananum na padstart() method use panuvom
+<pre>
+    let n2="5";
+    let result6=n2.padStart(4,"0");
+    console.log(result6);</pre>
+<h1>String padEnd()</h1>
+<p>The padEnd() method pads a string from the end.It pads a string with another string (multiple times) until it reaches a given length.</p>
+ethula pathicular num ku pinadi sum datas add pananum na padend() method use panuvom
+<pre>
+    let n3="5";
+    let result7=n3.padEnd(4,"0");
+    console.log(result7);
+</pre>
+<h1>string character</h1>
+<p>There are 3 methods for extracting string characters:</p>
+<ul>
+    <li>charAt(position)</li>
+    <li>charCodeAt(position)</li>
+    <li>Property access []</li>
+</ul>
+<h1>js String charAt()</h1>
+<p>The charAt() method returns the character at a specified index (position) in a string:</p>
+<pre>
+let n2="monisha";
+let result8=n2.charAT(3);
+console.log(result8);
+</pre>
+<h1>property access</h1>
+<pre>
+let n4="moni";
+let result10=n4[3];
+console.log(result10);
+</pre>
+<h1>split() methode</h1>
+<p>A string can be converted to an array with the split() method:</p>
+<pre>
+let n5="monisha";
+console.log(n5);
+let result11=n5.split("i");
+console.log(result11);
+</pre>
+<h1>includes() method</h1>
+<p>true or false than return panum(atha word erutha true illana false) </p>
+<pre>
+    let word="this is my world";
+    let result12=word.includes("my");
+    console.log(result12);
+
+</pre>
+
+
+
+<script>
+
+    //string style method (output la yepadi yellam venumo atha ethula panikalam)    
+        let name="m\'ad\\h\"u\"";
+        console.log(name);
+        let name1='monisha';
+        console.log(name1);
+// string method normal 
+let name2="monisha";
+console.log(name2);
+var n='moni'
+console.log(n);
+//string length(find out pananum na length use pananum)
+let name3="monisha";
+console.log(name3.length);
+// string slice
+let name4="moni anbu mano";
+    let text=name4.slice(5);
+    console.log(text);
+    let name5="moni anbu mano";
+    let text1=name5.slice(-14);
+    console.log(text1);
+//string substring
+let str="apple,banana,mango";
+    let text2=str.substring(7,13);
+    console.log(text2);
+//string replace
+let name6="moni anbu mano";
+    let text3=name6.replace("anbu","rezula");
+    console.log(text3);
+// replace (/g method)
+let name7="moni anbu mano anbu";
+    let text4=name7.replace(/anbu/g,"rezula");
+    console.log(text4);
+//replace(/i method)
+let name8="moni anbu mano anbu";
+    let text5=name8.replace(/anbu/i,"rezula");
+    console.log(text5);
+// replace all method
+let name9="moni anbu mano anbu";
+    let text6=name9.replaceAll("anbu","rezula");
+    console.log(text6);
+//to uppercase
+let name10="monisha palanivel"
+let result=name10.toUpperCase();
+console.log(result);
+//to lowercase
+let name11="MONISHA PALANIVEL"
+    let result1=name11.toLowerCase();
+    console.log(result1);
+// concat method
+let name12="moni";
+    let name13="sha";
+    console.log(name12.concat(name13));
+//concat + plus method
+// text7="moni"+" "+"sha";
+// text7="moni".concat(" ",sha);
+//trim() method
+let name14="   moni        ";
+console.log(name14);
+let result2=name14.trim();
+console.log(result2);
+//length method trim()
+let name15="   moni        ";
+    console.log(name15.length);
+    let result3=name15.trim();
+    console.log(result3.length);
+//trim start()method
+let text7 = "     Hello World!     ";
+console.log(text7.length);
+    let result4=text7.trimStart();
+    console.log(result4);
+//trim end()method
+let text8= "     Hello World!     ";
+console.log(text8.length);
+    let result5=text8.trimEnd();
+    console.log(result5);
+//pad start()
+let name16="5";
+    let result6=name16.padStart(4,"0");
+    console.log(result6);
+//padend()
+let n3="5";
+    let result7=n3.padEnd(4,"0");
+    console.log(result7);
+//charAT() method
+let name17="monisha";
+result8=name17.charAt(2);
+console.log(result8);
+//charCodeAt() method
+let name18="monisha";
+result9=name18.charCodeAt(2) ;
+console.log(result9);
+//arrays
+let n4="moni";
+let result10=n4[3];
+console.log(result10);
+//split() method
+let n5="monisha";
+console.log(n5);
+let result11=n5.split("i");
+console.log(result11);
+//include() method
+let word="this is my world";
+    let result12=word.includes("my");
+    console.log(result12);
+</script>
+</body>
+</html>

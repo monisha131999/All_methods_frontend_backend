@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+<style>
+    div.gallary{
+        margin:5px;
+        border:2px solid black;
+        float: left;
+        width: 300px;
+    }
+    div.desc{
+        width:300px ;
+        height: 150px;
+    }
+    #next{
+     width: 46px;
+     height: 44px;
+     background:url(img_submit.gif)-91px 0;
+    }
+    .content{
+        
+      list-style-type: none;
+    }
+.content:hover{
+    display: inline-block;
+    background-color: gray;    
+    }
+    a[target]{
+        background-color:chartreuse;
+    }
+    a[target=_top]{
+        background-color:cyan ;
+    }
+    [title~="flower"] {
+  border: 5px solid rgb(42, 39, 211);
+}
+[class|="top"] {
+  background: rgb(21, 206, 230);
+}
+[class^="_blank"] {
+  background: yellow;
+}
+[class$="test"] {
+  background:deeppink;
+}
+[class*="ra"] {
+  background:grey;
+}
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: darkcyan;
+}
+
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+</style>
+</head>
+<body>
+    <div class="gallary">
+        <a target="_blank" href="husky.image.jpg">
+            <img src="husky.image.jpg"alt="dog img" width="300px"height="300px">
+        </a>
+        <div class="desc">Siberians are high-energy and extremely athletic, and they can be expert escape artists. This can make them very challenging to keep as pets. Because they love to run long distances, for their own good, they should never be off-lead in unfenced areas—and they should be microchipped in case they ever are lost</div>
+    </div>
+    <img id="next" src="img_submit.gif"alt="go img"><br>
+<ul class="content">
+    <li id="home"><a href="https://www.w3schools.com/"><img src="img_submit.gif"alt="go img">
+    </a></li></ul>
+    <h2>css [attributes]selector</h2>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <h2>css [attributes="value"]selector</h2>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <img src="rose1.jpg" title="rose1 flower" width="150" height="113">
+    <img src="rose2.webp" title="flower" width="200" height="162">
+    <img src="rose3.jpg" title="tree" width="150" height="200">
+    <h2>CSS [attribute|="value"] Selector</h2>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <h2>CSS [attribute^="value"] Selector</h2>
+    <h1 class="_blank-header-">Welcome</h1>
+    <p class="_blank-text">Hello world!</p>
+    <p class="_blankcontent">Are you learning CSS?</p>
+    <h2>CSS [attribute$="value"] Selector</h2>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <h2>CSS [attribute*="value"] Selector</h2>
+
+<div class="first rank">The first div element.</div>
+<div class="second rank ">The second div element.</div>
+<div class="my">The third div element.</div>
+<p class="myrank">This is some text in a paragraph.</p>
+<h2>Styling Forms</h2>
+Firstname:<input type="text" id="fname" name="fname" value="monisha"><br>
+latename:<input type="text" id="lname" name="lname" value="palanivel"><br><br>
+<input type="submit" value="Submit">
+</body>
+</html>

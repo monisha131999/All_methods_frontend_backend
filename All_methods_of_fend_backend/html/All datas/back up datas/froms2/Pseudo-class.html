@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+     /* unvisited link */
+a:link {
+  color:rgb(130, 216, 238);
+}
+
+/* visited link */
+a:visited {
+  color:yellow;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+a.highlight:hover {
+  color: yellow;
+  font-size: 30px;
+}
+.mouse {
+  background-color: purple;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  }
+.mouse:hover{
+    background-color: burlywood;
+}
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+em:first-child {
+  color:green;
+}
+i em:first-child {
+  color: blue;
+} 
+h3:first-child em.c {
+  color:hotpink;
+  }
+    </style>
+</head>
+<body>
+    <h1>what is PSEUDO-CLASS</h1>
+    <div>what are all the elements are inside the body that is <mark>selector</mark>,then class name r <mark>PSEUDO-CLASS</mark>and then property means <mark>(style)</mark>and value means we give the colors and use all the styles.</div>       
+<h1>Anchor Pseudo-classes</h1>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p>we use the link above statements it will be visible the user side <em><mark>(visible,hover,link,selected. on the link what style will be apply on the link that is call as Anchor pseudo class )</mark></em></p>
+<h1>Pseudo-classes and HTML Classes</h1>
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+<p><a href="default.asp">CSS Tutorial</a></p>
+<h1>Hover on div element</h1>
+<div class="mouse">Mouse Over Me</div>
+<h1>Simple Tooltip Hover</h1>
+<div>Hover over this div element to show the p element
+    <p>Tada! Here I am!</p>
+</div>
+  <h1>CSS The first-child Pseudo-class</h1>
+  <em>This is some text.</em>
+  <em>This is some text.</em>
+  <div>
+    <em>This is some text.</em>
+    <em>This is some text.</em>
+  </div>
+  <h1>Match the first i element in all p elements</h1>
+  <i>I am a <em>strong</em> person. I am a <em>strong</em> person.</i>
+<i>I am a <em>strong</em> person. I am a <em>strong</em> person.</i>
+<h1>Match all i elements in all first child p elements</h1>
+<h3>I am a <em class="c">strong</em> person. I am a <em class="c">strong</em> person.</h3>
+<h3>I am a <em class="c">strong</em> person. I am a <em class="c">strong</em> person.</h3>
+
+<div>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+
+
+
+</body>
+</html>

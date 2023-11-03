@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oops</title>
+</head>
+<body>
+    <script>
+        //object&function compained function
+      let san={
+         method:function(name,age,phonenumber,emailid,course){
+             console.log(name,age,phonenumber,emailid,course);
+      }
+    }
+     san.method("monisha",24,9994048621,"monianbu380@gmail.com","fullstack");
+     san.method("manoj",27,9688804565,"manoj.police380@gmail.com","embedded");
+     san.method("thansika",20,9688804565,"manoj.police380@gmail.com","embedded");
+     san.method("binthu",21,1234567890,"manoj.police380@gmail.com","embedded");
+     san.method("deekshika",22,987654321,"manoj.police380@gmail.com","embedded");
+     san.method("pavanvishva",23,865432789,"manoj.police380@gmail.com","embedded");
+
+//oops concept (object oriented programming language)
+
+let person={
+    //key:value
+    name:"anu",
+    age:26,
+    hobby:['drawing',"reading books","hearing song"],
+    isAlive:true,
+   method:function (){
+    let result=" name:"+person.name+"age:"+person.age+"hobby"+person.hobby+"isAlive:"+person.isAlive;
+    console.log(result);
+   }
+}
+person.method();
+
+//nested object
+
+let san1={
+    //key:value
+    name:"anu",
+    age:26,
+    hobby:['drawing',"reading books","hearing song"],
+    isAlive:true,
+sibiling:{
+        name:"dharsan",
+    },
+   method:function (){
+    let result=" name:"+san1.name+"age:"+san1.age+"hobby"+san1.hobby+"isAlive:"+san1.isAlive;
+    console.log(result);
+   },
+}
+console.log(san1.sibiling.hobby);
+
+//object private ahh erukum,next oru object kulla fuction create pani athula differents type calling method use pananum
+//there are three type of method 
+//*call
+//*apply
+//*bind
+//call na (oru object kulla erukura value ahh unoru object kula erukura function lA call pananum na call method use pani call panunaum (ethula arguments string("") la use panuvom))
+
+let person2={
+name:"anbu",
+age:25,
+}
+let person3={
+    name:"palanivel",
+    age:26,
+}
+    let information={
+    result:function(){
+        let display="name is "+this.name+"ageis"+this.age;
+        console.log(display);
+    }
+}
+information.result.call(person2);//call method
+
+//apply method(oru object kulla erukura value ahh unoru object kula erukura function lA call pananum na call method use pani call panunaum (ethula arguments array[] la use panuvom))
+
+let person4={
+name:"anbu",
+age:25,
+}
+let person5={
+    name:"palanivel",
+    age:26,
+}
+    let information1={
+    result:function(dept){
+        let display="name is "+this.name+"ageis"+this.age+"dept"+dept;
+        console.log(display);
+    }
+}
+information.result.apply(person5, ["cse"]);//apply method
+
+//bind()
+
+let person6={
+name:"anbu",
+age:25,
+}
+let person7={
+    name:"palanivel",
+    age:26,
+}
+let person8={
+    name:"manoj",
+    age:30,
+}
+    let information2={
+    result:function(dept){
+        let display1="name is "+this.name+"ageis"+this.age+"dept"+dept;
+        console.log(display);
+    }
+}
+let display1=information.result.bind(person8, ["cse"]);//bind method
+display1();
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <link rel="stylesheet" href="new homework1.css">
+</head>
+<body>
+    <div id="moni"></div>
+    <div class="nisha"></div>
+    <div class="nisha"></div>
+    <div class="nisha"></div>
+<!--new website create  -->
+    <div id="monisha"></div>
+ <div class="container">
+  <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Content</a></li>
+      <li><a href="">Menu</a></li>
+      <li><a href="">Help</a></li>
+  </ul>
+</div>
+<div id="data"></div>
+<script>
+let moni =document.getElementById("moni")
+console.log(moni);
+let nisha=document.getElementsByClassName("nisha")
+console.log(nisha);
+let EL =document.querySelector(".nisha")
+EL.innerHTML="Moni"
+console.log(EL);
+let don1 =document.querySelectorAll(".nisha")
+console.log(don1);
+//new website
+var monisha=document.getElementById("monisha")
+var don=document.createElement("h1")
+don.innerText="ROYAL ENFIELD"
+monisha.appendChild(don)
+console.log(don);
+
+var data=document.getElementById("data")
+var don2=document.createElement("h2")
+don2.innerText="FOOTER"
+data.appendChild(don2)
+don2.style.color="blue"
+don2.style.backgroundColor="orange"
+
+console.log(don2);
+
+</script>
+</body>
+</html>

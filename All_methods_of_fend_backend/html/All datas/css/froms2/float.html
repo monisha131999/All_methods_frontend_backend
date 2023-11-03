@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        img{
+            width: 85px; 
+            float: left;
+           }
+           p{
+            text-align: justify;
+            border: 2px solid black;
+        }
+        .husky{
+            width: 85px; 
+            float:right;
+           }
+           p{
+            text-align: justify;
+            border: 2px solid black;
+        }
+        .div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+ ul{
+
+list-style-type: none;
+margin:0;
+padding:0;
+overflow: hidden;
+background-color: #333;
+}
+li
+{
+    float: left;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align:center;
+    padding: 15px 16px;
+    text-decoration:none;
+    }
+    li a:hover{
+        background-color: blue;
+    }
+    .active{
+        background-color: red;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 30%;
+  padding: 50px;
+}
+
+.clearfix::after {
+   clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 30%;
+  padding:4px;
+}
+
+.clearfix::after {
+  clear: both;
+  display: table;
+}
+.tom{
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+    <h1>float right</h1>
+    <img class="husky"src="husky.image.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, commodi qui perspiciatis labore esse consectetur, autem alias amet tempora eius omnis porro nesciunt in, quae asperiores architecto fugiat voluptatem. Magni Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nulla voluptatibus dolorem neque voluptas dolore asperiores quasi distinctio assumenda laboriosam adipisci sequi eos, sed aspernatur aliquam esse incidunt autem dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis tenetur quidem nihil, sint doloribus architecto? Exercitationem sequi, iusto iste aliquid nobis alias, corporis nemo obcaecati ratione quaerat consequuntur ducimus.</p>
+    <h2>float left</h2>
+    <img src="husky.image.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, commodi qui perspiciatis labore esse consectetur, autem alias amet tempora eius omnis porro nesciunt in, quae asperiores architecto fugiat voluptatem. Magni Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nulla voluptatibus dolorem neque voluptas dolore asperiores quasi distinctio assumenda laboriosam adipisci sequi eos, sed aspernatur aliquam esse incidunt autem dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis tenetur quidem nihil, sint doloribus architecto? Exercitationem sequi, iusto iste aliquid nobis alias, corporis nemo obcaecati ratione quaerat consequuntur ducimus.</p>
+    <h1>without clear</h1>
+    <div class="div1">div1</div>
+    <div class="div2">div2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde atque dolore vitae, sapiente fuga quia tempore doloribus accusamus totam est. Impedit voluptate ratione sed et expedita laborum nesciunt officia corrupti?</div>    
+    <h1>with clear</h1>  
+    <div class="div3">div3</div>
+    <div class="div4">div4  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, fuga eos, aliquam ipsa nulla quo dolores quibusdam eius ex distinctio, exercitationem cupiditate illo dicta amet veniam optio commodi ipsam alias!</div> 
+    <h1>Navigation menu</h1>
+<ul>
+    <li><a href="#Home" class="active">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#submit">Submit</a></li>    
+</ul>
+<h1>grid of boxes</h1>
+<div class="clearfix">
+    <div class="box"style="background-color:pink">
+    <p>inside the box</p>
+    </div>
+    <div class="box"style="background-color:#ccc">
+    <p>inside the box</p>
+    </div>
+    <div class="box"style="background-color:#aaa">
+    <p>inside the box</p>
+</div>
+</div><br><br><br><br><br><br><br>
+
+<h1>image side by side</h1>
+<div class="clearfix">
+    <div class="img-container">
+    <img src="pigeon.jpg" alt="bird" style="width: 100px;">
+    </div>
+    <div class="img-container">
+    <img src="husky.image.jpg" alt="dog" style="width:100px">
+    </div>
+    <div class="img-container">
+    <img src="pigeon.jpg" alt="bird" style="width:100px">
+    </div>
+  </div>
+  <span class="tom">this is my data </span>
+<span class="tom">good</span>
+<span class="tom">bad</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js template literals</title>
+</head>
+<body>
+    <h1>js template literals</h1>
+    <ul>
+        <li>template</li>
+        <li>template</li>
+        <li>String templates</li>
+        <li>Back-Tics syntax</li>
+    </ul>
+    <h1>Back-Tics Syntax</h1> 
+    <p>Template Literals use back-ticks (``) rather than the quotes ("") to define a string:</p>
+  ethula single quotes um double qoutes um than string ahh define panuthu 
+     <pre>let text = `Hello world!`;
+       console.log(text);</pre>
+       sigle qoutes la kudutha kuda execute agum
+
+<h1>Quotes Inside Strings</h1>
+  <p>With template literals, you can use both single and double quotes inside a string:</p>
+ethula single qoutes kula double qoutes use pani kudutha athu double qoutes oda display agum
+<pre>let text1 = `Hello world!`;
+    console.log(text1);</pre>
+
+<h1>Multiline Strings</h1>
+<p>Template literals allows multiline strings:</p>
+<pre>let text2 =
+   `The quick
+    brown fox
+    jumps over
+    the lazy dog`;
+    console.log(text2);</pre>
+
+<h1>interpolation</h1>
+<p>Template literals provide an easy way to interpolate variables and expressions into strings.The method is called string interpolation.
+The syntax is:${....}</p>
+<h1>String templates</h1>
+<p>Template literals allow variables in strings:</p>
+<p>$ symbol use pani next line vara mathiri use panikalam</p>
+<pre>let firstName = "John";
+    let lastName = "Doe";
+    let text = `Welcome ${firstName}, ${lastName}!`;</pre>
+
+<h1>expression substitution</h1>
+
+<script>
+//back-tics syntax
+     let text = `Hello world!`;
+     console.log(text);
+//ouotes inside string
+     let text1 = `He's often called "Johnny"`;
+    console.log(text1);
+//Multiline Strings
+let text2 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+console.log(text2);
+
+//string template literals
+let firstName = "John";
+    let lastName = "Doe";
+    let text3 = `Welcome ${firstName}, ${lastName}!`;
+    console.log(text3);
+
+//Expression Substitution
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+console.log(total);
+//html templates
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+console.log(html);
+
+
+</script>
+</body>
+</html>

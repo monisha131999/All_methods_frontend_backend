@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+   <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js"></script> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background:#eef8ff ;
+        }
+
+        #footer-103{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            /* background: linear-gradient(to rigth, #00093c,#2d0b00); */
+            background: linear-gradient(#00093c,#2d0b00);
+            color:#fff;
+            padding:100px 0 30px;
+            border-top-left-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+       .row-101{
+         width:85%;
+         margin: auto;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: flex-start;
+         justify-content: space-between;
+       }
+       .col-102{
+          flex-basis: 25%;
+          padding:10px;
+        }
+        .col-102:nth-child(2),.col-102:nth-child(3){
+            flex-basis: 15%;
+        }
+        .logo-105{
+            /* width:80px; */
+            margin-bottom: 30px;
+
+        }
+        .col-102 h3{
+            width:fit-content;
+            margin-bottom: 40px;
+            position: relative;
+        }
+       .email-id{
+        width:fit-content;
+        /* border-bottom: 1px solid #ccc; */
+        margin: 20px 0;
+    }
+    .ul-143 li{
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+    .ul-143 li a{
+        text-decoration: none;
+        color: #fff;
+    }    
+    form{
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 50px;
+    }
+    form .far{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    form input{
+        width:100%;
+        background: transparent;
+        color:#ccc;
+        border:0;
+        outline:none;
+    }
+    form button{
+        background: transparent;
+        border:0;
+        outline:none;
+        cursor:pointer;
+    }
+    form button .fas{
+        font-size: 16px;
+        color:#ccc;
+    }
+
+    .social-icons .fab{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color:#000;
+        background: #fff;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    hr{
+      width: 90%;
+      border:0;
+      border-bottom: 1px solid #ccc;
+      margin:20px auto;
+    }
+    .copyrigth{
+        text-align: center;
+    }
+    .underline{
+        width:100%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px;
+        position: absolute;
+        top:25px;
+        left:0;
+        overflow: hidden;
+    }
+    .underline span{
+        width: 15px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left:10px;
+        animation: moving 2s linear infinite;
+    }
+    @keyframes moving{
+     0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+    }
+    @media(max-width:700px){
+        #footer-103{
+            bottom: unset;
+        }
+        .col-102{
+          flex-basis: 100%;
+          /* padding:10px; */
+        }
+        .col-102:nth-child(2),.col-102:nth-child(3){
+            flex-basis: 100%;
+        }
+    }
+    </style>
+
+
+</head>
+<body>
+    <footer id="footer-103">
+        <div class="row-101">
+            <div class="col-102">
+                <img src="footer-logo.png" class="logo-105">
+            </div>
+            <div class="col-102">
+                <h3>contact us <div class="underline"><span></span></div></h3>
+                <p>SAN Engineering Solutions,</p>
+                <p>No: 29/3, Kuberalakshmi Tower,</p> 
+                <p>3rd Floor, Opp to Post Office,</p>
+                <p>Perundurai, Erode - 638 052,</p>
+                <p>TamilNadu, India.</p>
+                <p class="email-id">Email:Id:<a href="mailto:info@sanengineeringsolutions.com">info@sanengineeringsolutions.com</a></p>
+                <p class="location">Location:<a href="https://www.google.com/maps?ll=11.27839,77.584914&z=17&t=m&hl=en-US&gl=IN&mapclient=embed&cid=1577196026927813462">
+                    <img src="https://www.sanengineeringsolutions.com/wp-content/uploads/2018/08/footer-map.png"width="100px"></a></p>
+            </div>
+           
+            <div class="col-102">
+                <h3>Quick Links <div class="underline"><span></span></div></h3>
+                <ul id="ul-143">
+                <li><a href="https://www.sanengineeringsolutions.com/">Home</a></li>
+                <li><a href="https://www.sanengineeringsolutions.com/about-us/">About us</a></li>
+                <li><a href="https://www.sanengineeringsolutions.com/careers/">Careers</a></li>
+                <li><a href="https://www.sanengineeringsolutions.com/staffing-solutions/">Staffing Solution</a></li>
+                <li><a href="https://www.sanengineeringsolutions.com/contact-us/">Contact us</a></li>
+            </ul>
+            </div>
+            <div class="col-102">
+                <h3>Newletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                <button class="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+             <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+        </div>
+        </div>
+        <hr>
+        <p class="copyrigth">@copyrigths@2018 
+            <a href="https://www.sanengineeringsolutions.com/"> SAN Engineering Solution</a> All Rigths Reserved</p>
+        <p class="copyrigth">Developed by
+            <a href="https://www.byzerotechnologies.com/">Byzero Technologies</a>
+        </p>   
+    </footer>
+</body>
+</html>

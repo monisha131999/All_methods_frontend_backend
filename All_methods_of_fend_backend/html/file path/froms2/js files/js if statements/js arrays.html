@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays</title>
+</head>
+<body>
+    <h1>An array is a special variable, which can hold more than one value:</h1>
+<pre>const cars = ["Saab", "Volvo", "BMW"];
+     console.log(cars);</pre>
+<p>list of arrays use panura neraiya word or text use panuna arrays use panuvom</p>
+<h1>arrays methods</h1>
+<h3>converting arrays to strings</h3>
+<ul>
+    <li>toStrings</li>
+    <li>popping&pushing()</li>
+    <li>shift()</li>
+    <li>unshift()</li>
+    <li>length</li>
+    <li>delete</li>
+    <li>merging(concatenating)arrays</li>
+    <li>flattening an arrays</li>
+    <li>splicing & slicing arrays</li>
+    <li>max & min values in an arrays</li>
+    <li>sort</li>
+</ul>
+<h1>tostring</h1>
+<p id="demo"></p>
+<p>converting arrays to string</p>
+<p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
+<i>example</i>
+<pre>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits);</pre>
+<p>ethula arrays ahh eruthatha string ahh change panum </p>
+
+<h1>join() method using *</h1>
+<p>The join() method also joins all array elements into a string.It behaves just like toString(), but in addition you can specify the separator:</p>
+<pre>const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits1);</pre>
+
+<h1>popping & pushing</h1>
+    <p>When you work with arrays, it is easy to remove elements and add new elements.This is what popping and pushing is:Popping items out of an array, or pushing items into an array.</p>
+    <p>given string la last value ahh delete panum delete the last value</p>
+
+<h1>popping</h1>
+<p>The pop() method removes the last element from an array:</p>
+<pre>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits);</pre>
+
+<h1>popping out</h1>
+<pre>const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+    let fruit = fruits3.pop();
+    console.log(fruits3);</pre>
+    <p>ethula last value delet aduchi</p>
+<h4>another example</h4>
+<pre>let num=[12,34,56,89,78];
+    console.log(num);
+    let result=num.pop()
+    console.log(result);
+    console.log(num);</pre>
+
+<h1>js array push</h1>
+<p>The push() method adds a new element to an array (at the end):</p>
+<p>Last value add panuvom</p>\
+<pre>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     console.log(fruits);
+     fruits.push("Kiwi");
+     console.log(fruits);</pre>
+  <h1>length</h1>  
+<p>The push() method returns the new array length:</p>
+<pre>let veg= fruits4.push("Kiwi");
+console.log(fruits4.length);</pre>
+
+<h1>shifting elaments</h1>
+<p>Shifting is equivalent to popping, but working on the first element instead of the last.</p>
+<h1>js arrays shifting</h1>
+<p>The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+ethula first value ahh delete panum
+<pre>const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits5);
+    let veg1=fruits5.shift();
+    console.log(fruits5);</pre>
+<p>first value ahh delete paniduchi</p>
+The shift() method returns the value that was "shifted out"
+
+<h1>js unshift</h1>
+<p>first value ahh add panum</p>
+<p>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:</p>
+<pre>const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+    let veg3=fruits6.unshift("Lemon");
+    console.log(fruits6)</pre>
+
+ <h1>changing elements</h1>
+ <p>Array elements are accessed using their index number:</p>
+ <pre>const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits7);
+    let veg2=fruits7[0] = "Kiwi";
+    console.log(fruits7);</pre>   
+
+<h1>js arrays delete</h1>
+<p>Array elements can be deleted using the JavaScript operator delete.Using delete leaves undefined holes in the array.Use pop() or shift() instead.</p>
+<h1>Merging (Concatenating) Arrays</h1>
+<p>The concat() method creates a new array by merging (concatenating) existing arrays:</p>
+<p>rendu string ahh merging panurathuku cancat use panurom</p>
+<pre>const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const myChildren = myGirls.concat(myBoys);
+    console.log(myChildren);</pre>
+
+<h1>Flattening an Array</h1>
+<pre>const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();</pre>
+<p>Flattening an array is the process of reducing the dimensionality of an array.The flat() method creates a new array with sub-array elements concatenated to a specified depth.</p>
+
+<h1>splicing & slicing arrays</h1>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p>The splice() method adds new items to an array.The slice() method slices out a piece of an array.</p>
+
+<h1>arrays splice</h1>
+<p>The splice() method can be used to add new items to an array:</p>
+<pre>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(friuts);
+    fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(friuts);</pre>
+<h1>remove method splice()</h1>
+<pre>let num=[12,34,56,89,78];
+    let remove=num.splice(3,0,"100");
+    console.log(remove);
+    console.log(num);</pre>
+
+<h1>max and min in an array</h1>
+<p>There are no built-in functions for finding the highest or lowest value in a JavaScript array.You will learn how you solve this problem in the next chapter of this tutorial.</p>
+
+<h1>Sorting Arrays</h1>
+<p>Sorting arrays are covered in the next chapter of this tutorial.</p>
+<pre>const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits12);
+    let veg7=fruits.sort();
+    console.log(fruits12);</pre>
+
+<h1>reversing an array</h1>
+    <p>The reverse() method reverses the elements in an array.You can use it to sort an array in descending order:</p>
+<p>array using string</p>
+<pre>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits);
+    let veg8= fruits8.sort();
+    console.log(fruits8.reverse());</pre>
+    
+<h1>numeric values sorts</h1>
+    <p>By default, the sort() function sorts values as strings. This works well for strings ("Apple" comes before "Banana").However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1". Because of this, the sort() method will produce incorrect result when sorting numbers.You can fix this by providing a compare function:</p>
+    
+<pre>let num1=[100,34,26,78,90];
+    console.log(num1);
+    let rev=num.reverse();
+    console.log(num);</pre>
+<p>another example</p>
+<pre>let points=[40,100,1,5,25,10];
+console.log(points);
+let rev=points.(function(a,b){return a-b});
+console.log(points);</pre>
+
+
+
+
+
+
+
+<script>
+//Converting Arrays to Strings
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits);
+//join(),tostring()
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits1.join("*"));
+//popping &pushing
+//popping
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits2);
+//popping out
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits3.pop();
+console.log(fruits3);
+//pusing add 
+const fruits4 = ["carrot", "Orange", "Apple", "Mango"];
+     console.log(fruits4);
+  let veg= fruits4.push("Kiwi");
+     console.log(fruits4);
+console.log(fruits4.length);
+//js arraya shift()
+const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits5);
+let veg1=fruits5.shift();
+console.log(fruits5);
+//unshift()
+const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+    let veg3=fruits6.unshift("Lemon");
+    console.log(fruits6)
+   //length calculate
+    console.log(fruits6.length);
+//changing element(remove)
+const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits7);
+let veg2=fruits7[0] = "Kiwi";
+console.log(fruits7);
+//js delete
+const fruits8 = ["Banana", "Orange", "Apple", "Mango"];
+console.log("the first fruit is:"+fruits8[0]);
+let veg4=delete fruits8[0];
+console.log("The first fruit is: " + fruits8[0]);
+//merging(cancatenating)arrays
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren);
+//another ex
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+const myChildren1 = array1.concat(array2, array3); 
+console.log(myChildren1);
+//ex1
+const myArray = ["Emil", "Tobias", "Linus"];
+const myChildren2 = myArray.concat("Peter");
+console.log(myChildren2);
+//Flattening an Array
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(newArr);
+//splice()method
+const fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits9;
+fruits9.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo2").innerHTML = fruits9;
+//another method
+let num=[12,34,56,89,78];
+let remove=num.splice(3,0,"100");
+console.log(remove);
+console.log(num);
+//arrays slice()
+const fruits10 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits10.slice(1);
+console.log(fruits + "<br><br>" + citrus);
+//automatic to string
+const fruits11 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+//sorting an array
+const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits12);
+let veg7=fruits.sort();
+console.log(fruits12);
+//reversing an array
+let num1=[100,34,26,78,90];
+console.log(num1);
+let rev=num.reverse();
+console.log(num);
+//another method
+let points=[40,100,1,5,25,10];
+console.log(points);
+let rev1=points.sort(function(a,b){return a-b});
+console.log(points);
+//another method
+let points1=[40,100,1,5,25,10];
+console.log(points1);
+let rev2=points1.sort(function(a,b){return b-a});
+console.log(points1);
+</script>
+</body>
+</html>

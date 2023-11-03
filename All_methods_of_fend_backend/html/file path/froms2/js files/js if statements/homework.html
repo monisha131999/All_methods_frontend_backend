@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home work JS(if,if else,for,switch,while,do while)</title>
+</head>
+<body>
+    <script>
+        //else if statements
+        let rate=36000;
+if (rate>=1000 && rate<=5000){
+    console.log("button phone");
+   }
+   else if(rate>=5000 && rate<=15000){
+       console.log("android phone");
+   }
+   else if(rate>=16000 && rate<=35000){
+       console.log("1 plus");
+   }
+   else if(rate>=36000 && rate<=100000){
+       console.log("i phone");
+   }
+   else{ 
+     (rate>=0 && rate<=999)
+       console.log("invalid amount to buy a mobile");
+   }
+
+//boolean operators
+ 
+var rainee=true;
+var cloudy=70;
+let whether=rainee|cloudy?"rain is coming &sky is also cloudy so don't forget to get the umbrella":"rain is not come but sky is cloudy so,go and get the umbrella"
+console.log(whether);
+var default1=11;
+let whether1=default1<10?"rain is coming and also sky is cloudy":"rain is not coming and also sky is clear"
+console.log(whether1);
+
+//else if 
+
+let time=10;
+if (time>=1 && time<=12){
+    console.log(" GOOD MORNING");
+   }
+   else if(time>=13 && time<=18){
+       console.log("GOOD AFTERNOON");
+   }
+   else if(time>=19 && time<=24){
+       console.log("GOOD EVENING");
+   }
+   else{ 
+     (time>=25 && time<=35)
+       console.log("invalid declare timing");
+   }
+
+
+//for 
+var name="helloworld";
+ for(let i=1;i<=20;i++){
+console.log(name);
+ }
+
+ //do while
+  
+ let i=100;
+ do{
+    console.log(i);
+    i--;
+ }while(i>=80);
+
+
+
+
+
+
+</script>
+</body>
+</html>

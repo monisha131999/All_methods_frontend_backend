@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+    body{
+    width:100%;
+    min-height: 100vh;
+}
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+/* html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+} */
+.header{
+    display: flex;
+    justify-content: center; 
+    padding: 15px 1;
+    background-color:#1c4c99;;
+    height: 40px;
+    /* margin-left: 800px; */
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    /* padding-left: 80px; */
+}
+nav li a{
+    color: white;
+}
+.header{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+}
+@media only screen and (max-width: 768px){
+    .img-logo{
+        text-align: center;
+        margin-top: 20px;
+        min-height: 95px;
+    }
+}
+/* .row{
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+@media only screen and (max-width:768px){
+    .menu-top{
+         float:none;
+         margin-top: 0;
+         margin-bottom: 0;
+    }  
+    .menu-p{
+        display: block;
+    }
+}
+.menu-top{
+    margin: 31px 0;
+}
+.menu-p{
+    display: none;
+    font-size: 18px;
+    margin: 10px 0 0;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    left: 45%;
+    color: #000;
+}
+p{
+    margin: 0 0 10px;
+    margin-block-start: 1em;
+    margin-block-end:1em ;
+    margin-inline-start: 0px;
+    margin-inline-end:0px ;
+}
+.navbar.navbar-menu{
+    margin-top: 0;
+}
+.navbar{
+    border: none;
+    margin-bottom: 0;
+    min-height: auto;
+}
+.navbar-menu{
+    background-color: none;
+    border-color: none;
+    box-shadow: none;
+    border-radius: none;
+    background: none;
+    margin-top: 10px;
+
+}
+.navbar-menu{
+background-image: -webkit-linear-gradient(top,#fff 0,#f8f8f8 100%);
+background-image: -o-linear-gradient(top,#fff 0,#f8f8f8 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));
+background-image: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+background-repeat: repeat-x;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+}
+.navbar-menu {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+nav{
+    display: block;
+}
+div{
+    display: block;
+}
+.navbar-header:before{
+    display: table;
+    content: "";
+}
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar-header:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar-menu .navbar-toggle{
+    border-color: #ddd;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.sr-only-focusable:active,.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto
+}
+.navbar-menu.navbar-toggle.icon-bar{
+    background-color: #888;
+}
+.navbar-toggle.icon-bar{
+    display: block;
+    width:22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-menu .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-toggle.icon-bar+.icon-bar{
+margin-top: 4px;
+}
+.navbar-menu .navbar-collapse{
+    border-color: #e7e7e7;
+}
+.navbar-collapse{
+    padding-right: 0px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+.collapse{
+    display: none;
+}
+.navbar-nav{
+    margin: 7.5px -15px;
+}
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#menu-item-1 {
+    background: url(http://www.sanengineeringsolutions.com/wp-content/uploads/2018/06/005-two-settings-cogwheels.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.dropdown, .dropup {
+    position: relative;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+}
+@media only screen and (max-width: 768px){
+.navbar-nav li a {
+    padding: 6px 12px !important;
+    text-align: center;
+}
+}
+.navbar-nav li a {
+    font-size: 16px;
+    color: #222!important;
+    margin-left: 7px;
+    font-weight: 700;
+    padding: 0px 20px !important;
+    font-family: 'Lato', sans-serif;
+}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+@media only screen and (max-width: 768px){
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+}
+.dropdown-menu {
+    border-radius: 0 !important;
+    padding: 0;
+    margin-top: 9px !important;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+@media only screen and (max-width: 768px){
+.navbar-nav li a {
+    padding: 6px 12px !important;
+    text-align: center;
+}
+}
+.dropdown-menu > li > a {
+    padding: 5px 15px !important;
+    text-align: left;
+    font-size: 13px;
+}
+.navbar-nav li a {
+    font-size: 16px;
+    color: #222!important;
+    margin-left: 7px;
+    font-weight: 700;
+    padding: 0px 20px !important;
+    font-family: 'Lato', sans-serif;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.dropdown-menu a {
+    margin-left: 0 !important;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+#menu-item-110 .dropdown-menu {
+    margin-left: 0;
+}
+}
+@media only screen and (max-width: 768px){
+#menu-item-78 .dropdown-menu:hover ul, #menu-item-110 .dropdown-menu {
+    margin-left: 0;
+}
+}
+#menu-item-110 .dropdown-menu {
+    margin-left: 158px!important;
+    margin-top: 0 !important;
+    top: 0px;
+}
+ul ul ul {
+    list-style-type: square;
+}
+ul ul {
+    list-style-type: circle;
+}
+ul {
+    list-style-type: disc;
+}
+@media only screen and (max-width: 768px){
+#menu-item-111 .dropdown-menu {
+    width: 100%;
+    text-align: center;
+}
+}
+#menu-item-111 .dropdown-menu {
+    margin-left: 158px!important;
+    margin-top: 0 !important;
+    top: 0px;
+}
+.menu-top li:last-child a {
+    padding-right: 0 !important;
+}
+#menu-item-411 {
+    background: url(http://www.sanengineeringsolutions.com/wp-content/uploads/2018/06/004-diploma.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

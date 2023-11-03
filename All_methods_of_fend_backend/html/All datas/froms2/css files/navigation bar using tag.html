@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation tag using tag</title>
+    <style>
+        *{
+           margin:0;
+           padding:0;
+         }
+         .container{
+            display: flex;
+            justify-content:space-evenly;
+            }
+            .container li{
+                list-style-type: none;
+            }
+            .container li a{
+                text-decoration: none;
+                background-color: rgb(78, 237, 219);
+                display: block;
+                width: 124px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;         
+            }
+       ul li a:hover{
+        background-color:deeppink;
+   }     
+   ul ul {
+    display: none;
+   }
+   ul li:hover .abu{
+   display: block;
+   }
+  ul ul ul {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top:150px;
+}
+ul ul li:nth-child(3):hover .Moni{
+    display: block;
+}
+</style>
+</head>
+<body>
+        <ul class="container">
+        <li><a href="">Home</a>
+        <ul class="abu">
+            <li><a href="">link1</a></li>
+            <li><a href="">link2</a></li>
+            <li><a href="">link3</a>
+                <ul class="Moni">
+                    <li><a href="">link4</a></li>
+                    <li><a href="">link5</a></li>
+                    <li><a href="">link6</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+        <li><a href="">Html</a></li>
+        <li><a href="">css</a></li>
+        <li><a href="">js</a></li>
+        <li><a href="">sql</a>
+        <li><a href="">python</a></li>
+        <li><a href="">java</a></li>
+        <li><a href="">php</a></li>
+        <li><a href="">bs</a></li>
+        <li><a href="">c</a></li>
+        <li><a href="">c++</a></li>
+        <li><a href="">c#</a></li>
+        
+    </li><br><br><br><br><br>
+</body>
+</html>

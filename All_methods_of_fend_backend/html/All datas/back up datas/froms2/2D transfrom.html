@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transform</title>
+    <style>
+.translate{
+width: 200px;
+height:200px;
+background-color:darkcyan;
+border: 2px solid black;
+transform: translate(60px,20px);
+}
+div{
+width: 100px;
+height:100px;
+background-color:rgb(41, 145, 218);
+border: 2px solid black;
+
+}
+.rotate{
+width: 200px;
+height:200px;
+background-color:rgb(41, 145, 218);
+border: 2px solid black;
+transform: rotate(20deg);
+}
+.rotateacw{
+    width: 200px;
+height:200px;
+background-color:rgb(212, 29, 240);
+border: 2px solid black;
+transform: rotate(-20deg);
+}
+.scale{
+margin: 150px;
+width: 200px;
+height: 100px;
+background-color: yellow;
+border: 1px solid black;
+transform: scale(1,2);
+/* transform: scale(0.5,0.5); */
+}
+.scaleX{
+  margin: 100px;
+  width: 180px;
+  height: 100px;
+  background-color: rgb(39, 242, 90);
+  border: 1px solid black;
+  transform: scaleX(2);
+  /* transform: scaleX(0.5); */
+}
+ .scaleY{
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(238, 118, 38);
+  border: 1px solid black;
+  transform: scaleY(3);
+/* transform: scaleY(0.5); */
+}
+/* .scaleZ{ 
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(238, 118, 38);
+  border: 1px solid black;
+  transform: scaleZ(3);
+}*/
+.skewX{
+width: 300px;
+height: 100px;
+background-color: rgb(223, 183, 24);
+border: 1px solid black;
+transform: skewX(20deg);
+}
+.skewY{
+width: 300px;
+height: 100px;
+background-color: rgb(39, 18, 228);
+border: 1px solid black; 
+transform: skewY(20deg);
+}
+.skew{
+width: 300px;
+height: 100px;
+background-color: rgb(242, 21, 21);
+border: 1px solid black;
+transform: skew(20deg,10deg);
+/* transform: skew(20deg); */
+}
+.matrix1{
+width: 300px;
+height: 100px;
+background-color: rgb(190, 17, 243);
+border: 1px solid black;
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+.matrix2{
+width: 300px;
+height: 100px;
+background-color: rgb(23, 231, 193);
+border: 1px solid black;
+transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+.translate:hover{
+    width: 400px;
+    height: 400px;
+}
+.rotate:hover{
+    width: 400px;
+    height: 400px;
+}
+.rotateacw:hover{
+    width: 400px;
+    height: 400px;
+}
+.scale:hover{
+    width: 400px;
+    height: 400px;
+}
+.scaleX:hover{
+    width: 400px;
+    height: 400px;
+}
+.scaleY:hover{
+    width: 400px;
+    height: 400px;
+}
+.skewX:hover{
+    width: 400px;
+    height: 400px;
+}
+.skewY:hover{
+    width: 400px;
+    height: 400px;
+}
+.skew:hover{
+    width: 400px;
+    height: 400px;
+}
+.matrix1:hover{
+    width: 400px;
+    height: 400px;
+}
+.matrix2:hover{
+    width: 200px;
+    height:200px;
+}
+</style>
+</head>
+<body>
+    <h1>css transfrom methods</h1>
+    <p>with the css transfrom property yoou can use the following 2D transfromation method</p>
+    <ul>
+        <li>translate()</li>
+        <li>rotate()</li>
+        <li>scale X()</li>
+        <li>scale Y()</li>
+        <li>scale()</li>
+        <li>skew X</li>
+        <li>skew Y</li>
+        <li>skew()</li>
+        <li>matrix()</li>
+    </ul>
+    <h1>The translate() Method</h1>
+    <div class="translate">hello</div>
+    <h1>The rotate() Method<mark>(clockwise)</mark></h1>
+    <div>This a normal div element.</div>
+    <div class="rotate">hello</div>
+    <h1>The rotate() Method<mark>(counter-clockwise)</mark></h1>
+    <div>This a normal div element.</div>
+    <div class="rotateacw">This div element is rotated clockwise 20 degrees.</div>
+    <h1>The scale() Method</h1>
+    <p><mark>The scale() method increases or decreases the size of an element.</mark></p>
+    <p><mark>The scale() method increases or decreases the size of an element.(This div element is decreased to be half of its original width and height.)</mark></p> 
+    <div class="scale">This div element is two times of its original width, and three times of its original height.</div>
+    <h1>The scaleX() Method</h1>
+    <p>The scaleX() method increases or decreases the width of an element.</p>
+    <p>The scaleX() method increases or decreases the width of an element.(This div element is half of its original width.)</p>
+    <div class="scaleX">This div element is two times of its original width.</div>
+    <h1>The scaleY() Method</h1>
+    <p>The scaleY() method increases or decreases the height of an element.</p>
+    <p>The scaleY() method increases or decreases the height of an element.(This div element is half of its original height.)</p>
+    <div class="scaleY">This div element is three times of its original height.</div>
+    <!--<div class="scaleZ">hello</div>-->
+    <h1>The skewX() Method</h1>
+    <p>The skewX() method skews an element along the X-axis by the given angle.</p>
+    <div>This a normal div element.</div>
+    <div class="skewX">This div element is skewed 20 degrees along the X-axis.</div>
+    <h1>The skewY() Method</h1>
+     <p>The skewY() method skews an element along the Y-axis by the given angle.</p>
+    <div>This a normal div element.</div>
+    <div class="skewY">This div element is skewed 20 degrees along the Y-axis.</div>
+    <h1>The skew() Method</h1>
+    <p>The skew() method skews an element into a given angle.</p>
+    <div>This a normal div element.</div>
+    <div class="skew">This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.</div>
+    <h1>The matrix() Method</h1>
+    <p>The matrix() method combines all the 2D transform methods into one.</p>
+    <div>This a normal div element.</div>
+    <div class="matrix1">Using the matrix() method.</div>
+    <div class="matrix2">Another use of the matrix() method.</div>
+</div>
+</body>
+</html>

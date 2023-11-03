@@ -1,0 +1,21 @@
+ul li{
+    list-style-type:none;
+    display: inline-block;
+ margin-left: 200px;
+
+}
+.header{
+background-color: rgb(12, 4, 125);
+height: 35px;
+text-align: center;
+margin: 2px;
+box-sizing: border-box;
+}
+.header ul li a{
+color: white;
+font-size: 18px;
+text-decoration: none;
+} 
+
+
+    

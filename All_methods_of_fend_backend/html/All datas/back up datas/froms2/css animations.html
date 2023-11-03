@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animations</title>
+    <style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+.percentage {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+
+@keyframes example1 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.percentage1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+@keyframes example2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.delay {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(241, 93, 20);
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example3 {
+  0%   {background-color:rgb(49, 235, 167); left:0px; top:0px;}
+  25%  {background-color:rgb(238, 24, 198); left:200px; top:0px;}
+  50%  {background-color:rgb(19, 237, 234); left:200px; top:200px;}
+  75%  {background-color:rgb(163, 212, 16); left:0px; top:200px;}
+  100% {background-color:rgb(235, 34, 128); left:0px; top:0px;}
+}
+.delay1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.animation-iteration-count {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example5 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.animation-iteration-count-infinity{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ }
+ @keyframes example6 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.reverse{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example7;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example7 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.alternate{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example8;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+@keyframes example8 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.alternate-reverse{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example9;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes example9{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+div{
+    width: 100px;
+  height: 50px;
+  background-color: rgb(234, 19, 137);
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+} 
+.forwards{
+    width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example10;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example10 {
+  from {top: 0px;}
+  to {top: 200px; background-color: rgb(35, 227, 252);}
+}
+.backward{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example11;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes example11 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+}
+.both{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example12;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+@keyframes example12 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+.shorthand{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example13;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example13 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.animation{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+</style>
+</head>
+<body>
+    <h1>css animations</h1>
+    <ul>
+        <li>@keyframes</a></li>
+        <li>animation-name</a></li>
+        <li>animation-duration</a></li>
+        <li>animation-delay</a></li>
+        <li>animation-iteration-count</a></li>
+        <li>animation-direction</a></li>
+        <li>animation-timing-function</a></li>
+        <li>animation-fill-mode</a></li>
+        <li>animation</a></li>
+    </ul>
+    <h1>CSS Animation</h1>
+    <div></div>
+     <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+<h1>animation @keyframe we use the percentage</h1>
+<div class="percentage"></div>
+<h1>animation @keyframe we use the percentage using multiple diraction</h1>
+<div class="percentage1"></div>
+<p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
+<div class="delay"></div>
+<p>Using negative values in the animation-delay property: Here, the animation will start as if it had already been playing for 2 seconds:</p>
+<div class="delay1"></div>
+<p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+<h1>The animation-iteration-count property</h1>
+<div class="animation-iteration-count"></div>
+<p>The animation-iteration-count property can be set to infinite to let the animation run for ever:</p>
+<h1>The animation-iteration-count property using infinite</h1>
+<div class="animation-iteration-count-infinity"></div>
+<h1>animation direction propertys</h1>
+<ul>
+    <li>normal</li>
+    <li>reverse</li>
+    <li>alternate</li>
+    <li>alternate-reverse</li>
+</ul>
+<div class="reverse"></div>
+<h1>alternate property</h1>
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example uses the value "alternate" to make the animation run forwards first, then backwards:</p>
+<div class="alternate"></div>
+<h1>alternate-reverse property</h1>
+<div class="alternate-reverse"></div>
+<h1>animation-timing-function property</h1>
+<ul>
+    <li>ease</li>
+    <li>linear</li>
+    <li>ease-in</li>
+    <li>ease-out</li>
+    <li>ease-in-out</li>
+    <li>cubic-bezier(n,n,n,n)</li>
+</ul>
+<p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+<h1>animation-fill-mode</h1>
+<ul>
+    <li>none</li>
+    <li>forwards</li>
+    <li>backwards</li>
+    <li>both</li>
+</ul>
+<p>Let the div element retain the style values set by the last keyframe when the animation ends:</p>
+<div class="forwards"></div>
+<h1>animation-fill-mode-backwards</h1>
+<div class="backward"></div>
+<h1>animation-fill-mode-both</h1>
+<div class="both"></div>
+<h1>animation shorthand property</h1>
+<p>This example uses six of the animation properties:</p>
+<div class="shorthand"></div>
+<h1>animation property</h1>
+<div class="animation"></div>
+
+
+
+</body>
+</html>

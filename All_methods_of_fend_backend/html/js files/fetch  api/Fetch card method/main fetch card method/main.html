@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main fetch cards method</title>
+
+    <style>
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width: 23%;
+    box-shadow:0 0 4px 3px pink ;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2em;
+}
+.images{
+    width: 80%;
+    
+}
+
+.title{
+   font-size:1.3rem ;
+}
+.category,.price{
+   font-weight: bold; 
+   text-transform: capitalize;
+   margin: 1em;
+   font-size: 1.2rem;
+
+}
+    </style>
+</head>
+<body>
+    <h1 class="heading">Fetch Fake Store Api</h1>
+    <div id="cards">
+        <!-- <div class="card">
+            <h1 class="title">title</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+            <p>description</p>
+            <p class="category">category</p>
+            <p class="price">price</p>
+        </div> -->
+        <!-- <div id="cards"> -->
+            <!-- <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div>
+            <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div>
+            <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div>
+            <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> 
+            <div class="card">
+                <h1 class="title">title</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDRkZAnvyg8voU-Fnd2dP7H0SwjSsyeEpA&usqp=CAU" alt="img" class="images">
+                <p>description</p>
+                <p class="category">category</p>
+                <p class="price">price</p>
+            </div> -->
+    </div>
+    <!-- <div id="root"> -->
+    
+    <!-- </div> -->
+    
+    
+    <script>
+fetch('https://fakestoreapi.com/products')
+.then((data)=>{
+    // console.log(data);
+ return data.json();
+
+}).then((completedata)=>{
+    // console.log(completedata[2].title);
+    // document.getElementById('root').
+    // innerHTML=completedata[2].title;
+    let data1="";
+    completedata.map((values)=>{
+        data1+=` <div class="card">
+        <h1 class="title">${values.title}</h1>
+        <img src=${values.image} alt="img" class="images">
+        <p>${values.description}</p>
+        <p class="category">${values.category}</p>
+        <p class="price">${values.price}</p>
+    </div>`
+    });
+    document.getElementById("cards").innerHTML=data1;
+
+
+}).catch((err)=>{
+    console.log(err);
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter method</title>
+</head>
+<body>
+    <h1>Filter method</h1>
+    <p>ethula value ahh get pani change panika mudiyathu</p>
+<pre>let person =[
+        {name:"Monisha",age:24,gender:"female"},
+        {name:"Prabu",age:33,gender:"male"},
+        {name:"Anbu",age:51,gender:"female"},
+        {name:"Manoj",age:30,gender:"male"},
+        {name:"Prasanth",age:29,gender:"male"}, 
+        {name:"logeshwari",age:27,gender:"female"}, 
+        {name:"palanivel",age:55,gender:"male"}, 
+        {name:"keerthivarman",age:23,gender:"male"}, 
+        {name:"Arunprasanth",age:22,gender:"male"}, 
+        {name:"karthika",age:22,gender:"female"}, 
+        {name:"abitha",age:21,gender:"female"}, 
+        {name:"tamilarasi",age:22,gender:"female"}, 
+    ]
+var datas = person.filter((data)=>{
+        return data
+      
+        })
+        console.log( datas);</pre>
+<h2>Another method of filter method</h2>
+<p>ethula paticular items ahh call pani yeduthugalam</p>
+<pre>
+    var datas = person.filter((data)=>{
+        return data.name =="palanivel"
+      
+        })
+        console.log( datas);
+</pre>
+
+<h2>Map method</h2>
+<p>ethula input ahh get pani atha change panika mudiyum</p>
+<pre>
+    let value = person.map((data)=>{
+        return data.degree.toUpperCase()
+    
+      })
+    
+      console.log(value);
+    
+<h3>another method of map using calculating method</h3>
+    
+    
+    const box = [2,3,5,1,4,7]
+    
+    
+     const sum =  box.map((value)=>{
+      return value * 2 ;
+    })
+    
+    console.log(sum)
+    
+    
+    const box1 = [323,696,420,900,400,650]
+    
+    
+     const sum1 =  box1.map((value)=>{
+      return value / 5 ;
+    })
+    
+    console.log(sum1)
+</pre>
+
+<h1>find method</h1>
+<p>function kula yevalo items same ahh eruthalum athu first erukurathu madum than visible agum</p>
+
+<pre>let value = person.find((data)=>{
+    return data.gender=="male"
+  })
+  console.log(value);</pre>
+
+<h1>forEach()</h1>
+<p>for each is more over map method (ethula paticular items ahh call panunom na epo for example(age call panunom na function la erukura user oda age yellam varum))</p>
+
+<pre>
+    let value2= person.forEach((data)=>{
+        console.log(data.age);
+    
+      })
+</pre>
+
+
+        <script src="./filter.js"></script>
+</body>
+</html>

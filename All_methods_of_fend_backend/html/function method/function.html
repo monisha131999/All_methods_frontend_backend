@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//objects        
+        const person ={
+            name:"monisha",
+            age:24,
+            place:"namakkal",
+        }
+    //function declaration
+        function moni() {
+            console.log(person.name);
+        }
+
+moni();
+// moni();
+// moni();
+// moni();
+
+//parameters means oru function na marupadiyum marupadiyum reuse panurathuku use panurom
+// ethula name than prameters
+//objects        
+const person1 ={
+            name:"prabu",
+            age:33,
+            place:"namakkal",
+        }
+function prabu(name) {
+            console.log(name);
+        }
+
+        prabu(person.name);
+        prabu(person1.name);
+        prabu('anburazula');
+//aruguments
+//function ahha call panum poothu oru values kudukurom illaya atha aruguments
+function abumoni(name,age) {
+            console.log(name);
+            console.log(age);
+
+        }
+
+        abumoni(person.name,person.age);
+        abumoni(person1.name,person1.age);
+        abumoni('anburazula','51');
+//mutiple times aruguments ahh pass panurom (object ahh parameters ahh pass panurom ethula object than person)
+function abumoni1(person) {
+            console.log(person.name);
+            console.log(person.age);
+        }
+
+        abumoni(person);
+        abumoni(person1);
+        // abumoni('anb.urazula','51');
+    </script>
+</body>
+</html>

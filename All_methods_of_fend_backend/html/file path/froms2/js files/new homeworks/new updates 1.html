@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<scripy>, initial-scale=1.0">
+    <title>three types of method </title>
+</head>
+<body>
+<h1>object</h1>
+<p>oru function kula unoru method use panurom na call back methode mathiri</p>
+
+<h1>type checking methode</h1>
+    <p>namba kudukura method enna nu therichiga etha type checking methode eruku</p>
+    <pre>let a="moni";
+        console.log(typeof a);
+
+    </pre>
+
+<h1>set time out method</h1>
+<p>set time out na css la delay methode mathiri than ethula namba objects ahh kuduthudu athu yevalo seconds kalichi print aganum nu kela denote panikanum apadi panita avalo seconds kalichi desplay agum<mark>once madum than print agum</mark></p>
+<pre>setTimeout(()=>{
+    console.log("one");},4000)
+</pre>   
+   <h1>setInterval method</h1>
+  <p>set interval na css la delay methode mathiri than ethula namba objects ahh kuduthudu athu yevalo seconds kalichi print aganum nu kela denote panikanum apadi panita avalo seconds kalichi desplay agum<mark>continuous ahh print agum</mark></p>
+<pre>seInterval(()=>{
+    console.log("sometimes");},3000)</pre>
+   
+<h1>objects</h1>
+<p>object la rendu method use panuvom onu object(object value soluvom)other type(key value nu soluvom)</p> 
+epo name=>key (ethu change pana mudiyathu),aana moni=>value (etha change pana mudiyum)
+<pre>let person={
+    name:"moni",
+    age:24,
+    gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}console.log(person.name);
+<mark>athula new ahh add pananum na epadi use pananum</mark>
+<pre>let person={
+    name:"moni",
+    age:24,
+    gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}
+console.log(person.name);
+person.name="nisha"
+console.log(person);
+
+
+</pre>
+</pre>
+   <script>
+    //type checking method
+        let a="moni";
+        console.log(typeof a);
+
+    //set timeout method
+    setTimeout(()=>{
+    console.log("one");
+},4000)
+
+    setTimeout(()=>{
+    console.log("two");
+},4000)
+
+    setTimeout(()=>{
+    console.log("three");
+},4000)
+
+//ethula value orey mathiri eruku so orey time la print aguthu values ahh change panuna output change agum
+setTimeout(()=>{
+    console.log("one");
+},5000)
+
+    setTimeout(()=>{
+    console.log("two");
+},3000)
+
+    setTimeout(()=>{
+    console.log("three");
+},2000)
+
+//setInterval method
+    setInterval(()=>{
+    console.log("sometimes");},5000)
+
+//objects
+// normal method to calling to use console method
+let person={
+    name:"moni",
+    age:24,
+    gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}
+console.log(person.name);
+//new ahh name ahh add panurathuku use panurom
+let person1={
+    name:"moni",
+    age:24,
+    gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}
+console.log(person1.name);
+person1.name="nisha"
+console.log(person1);
+
+//distructuring method
+let person2={
+    name:"moni",
+    age:24,
+    gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}
+const{name,age,gender,sibiling}=person2
+ console.log(name,age,gender,sibiling);
+
+//paticular sibiling name madum venuma enna panuna yepadi call pananum na
+
+let person3={
+    Name:"moni",
+    Age:24,
+    Gender:"female",
+    sibiling:{
+        sister:"logeswari",
+        brother1:"manojprabakaran",
+        brother2:"prasanth",
+    }
+}
+console.log(person3.sibiling.sister);
+//let person4={
+//     Name:"moni",
+//     Age:24,
+//     Gender:"female",
+//     sibiling:{
+//         sister:"logeswari",
+//         brother1:"manojprabakaran",
+//         brother2:"prasanth",
+//     }
+// }
+// const {Name,Age,Gender,sibiling:{sister}
+// console.log(sister);
+// }
+
+//this method
+//this =>key word
+ let person4={
+  Name:"abi",
+ Age:24,
+ Gender:"female",
+sibiling:function(){
+console.log(this.name);
+ }
+}
+sibiling.name
+</script> 
+
+</body>
+</html>

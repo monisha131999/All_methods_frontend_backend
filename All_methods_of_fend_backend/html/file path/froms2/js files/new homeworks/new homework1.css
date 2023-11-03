@@ -1,0 +1,33 @@
+#monisha{
+    border: 3px solid green; 
+    border-width:15px ;
+    text-align: center;
+    background-color: aqua;
+    color: deeppink;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container ul li{ float:left;
+    list-style-type: none;
+    width: 250px;
+    background-color:rgb(17, 226, 191);
+         text-align: center;
+         margin: 17px;
+         padding: 10px 0;
+     }
+     ul li a{
+         display: inline-block;
+         text-decoration:none;
+         color:white;
+         /* padding: 20px,0; */
+     }
+     ul li:hover{
+         background-color: deeppink;
+     }
+     #data{
+        text-align: center;
+        border: 3px solid purple;
+        background-color: ;
+
+    }

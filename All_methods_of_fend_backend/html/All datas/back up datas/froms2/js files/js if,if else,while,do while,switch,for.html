@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS(IF,IF ELSE,FOR,SWITCH,WHILE,DO WHILE)</title>
+</head>
+<body>
+<h1>if statements</h1>
+<p> if statements la oru condition than erukum atha execute panidu exit aidum</p>
+<i>Example</i>
+<pre>let age=18;
+if(age>=18){
+    console. log("eligible to vote");
+}</pre>
+<h1>IF ELSE </h1>
+<p><mark>oru value ahh tharuvom apuram oru condition erukum atha check panum athu <strong>true ahh erutha</strong>( if statements execute agum) <strong>false ah erutha</strong> (else statement execute agum)</mark></p>
+<i>Example</i>
+<pre>let age=18;
+if(age>=18){
+    console. log("eligible to vote");
+}
+else{
+    console.log("not eligible to vote");
+}</pre>
+
+<h1>ELSE IF</h1>
+<p><strong>else if</strong> na if statements kulla neraiya set of else if  conditions kuduthom  na atha check pani yetha conditon namba kudutha value ku satisfaction ahh eruko atha execute panum illana<strong>else statements ahh</strong> (execute panum) </p>
+<i>Example</i>
+<mark>epo ethu than namba kudukura value asign panurom enga (mark=12) nu epoo fail nu output execute agum (en na namba kudutha value else if la kudutha condition ku satisfic agura mathiri illa  so, else execute aduchi )</mark>
+<pre>let mark;
+if (mark>=90 && mark<=100){
+ console.log("A GRADE");
+}
+else if(mark>=80 && mark<=89){
+    console.log("B GRADE");
+}
+else if(mark>=70 && mark<=79){
+    console.log("C GRADE");
+}
+else if(mark>=35 && mark<=69){
+    console.log("D GRADE");
+}
+else{
+    console.log("fail");
+}</pre>
+<h1>SWITCH STATEMENTS</h>
+<P><strong>switch statements</strong>na first oru value declare panurom atha value ahh switch ahh kudukurom (switch kulla cash values apply agum case1,case2 like that ect...athula else statement pathil la default nu kudupom)</P>
+<i>Example</i>
+<mark>switch statement la year kura name ahh declare pani erukom athuku value ahh declare panuna athuku thaguntha mathiri output execute agum </mark>
+<pre>let year=2;
+switch(year)
+{
+    case1:
+    {
+        console.log("janaary");
+    }
+    case2:
+    {
+        console.log("feb");
+    }
+    case3:
+    {
+        console.log("march");
+    }
+    default:
+    {
+        console.log("invalid year");
+    }
+}</pre>
+<h1>break statement</h1> 
+<p>paticular statement ahh apuram display aga kudathuna break statement declare panurom </p>
+<pre>switch(year)
+{
+    case1:
+    {
+        console.log("janaary");
+        break;
+    }
+    case2:
+    {
+        console.log("feb");
+        break;
+    }
+}</pre>
+<h1>looping statement</h1>
+<p>looping la two types eruku </p>
+<ul>
+    <li>While loop</li>
+    <li>Do while loop</li>
+</ul>
+<h1>While loop </h1>
+<p><strong>while loop </strong>na first value asign panuvom next while condition asign panurom  apuram condition check panūm  next print panum <mark>condition check panidu next print panum</mark> </p>
+
+<pre>let n=10;
+while(n>=1){
+    console.log(n);
+    n--;
+}</pre>
+<h1>do while</h1>
+<p><strong>do while loop </strong>na first value asign panuvom next print panum do while condition asign panurom  apuram condition check<mark>first print panum next condition check panum</mark></p>
+<pre>let i=0;//declare
+do {
+    console.log(i);
+    i++;
+}while(i<=10);</pre>
+<h1>FOR loops</h1>
+<p><strong>for loop </strong>na value asign panum apuram condition check panum print agum apuram increament or decrements agum</p>
+<pre>for(let i=0;i<=10;i++;){
+    console.log (i);
+    }</pre>
+    <hr>
+<h1> for la two types eruku</h1>
+<ul>
+    <li>for in (using object, arrays)</li>
+    <li>for of (only using in arrays)</li>
+</ul>
+<p>for in object accessing in( kurathu person kulla erukura value ahh display pana use aguthu) </p>
+<h1>for in objects</h1>
+for Example
+<pre>let person={
+    name:"moni",
+    age:24,
+    hobby:"drawing",
+    isAlive: true
+} 
+for(let index in person){
+    console.log(index);
+}</pre>
+in=position ahh mean panuthu
+index=key;(total objects(function) ahh kurikuthu ok va )
+in=function kulla erukura keys madum yeduthukuthu(like:name,age,hobby,is alive like that)
+<h1>for in objects la arrays use pani panurathu </h1>
+<pre>let person={
+    name:"moni",
+    age:24,
+    hobby:"drawing",
+    isAlive: true
+}
+for(let index in person){
+    console.log(person[index]);
+}</pre>
+person[index]=kudukurom apoo key kudu erukura values ahh madum yeduthukum(like:moni,24,drawing,true like that)
+[index]=arrays(for in arrays)
+
+<h1>keys um values um add panurom</h1>
+<pre>
+    let person2={
+        name:"moni",
+        age:24,
+        hobby:"drawing",
+        isAlive:true
+    }
+    for(let index in person2){
+        console.log(index+":"+person2[index]);
+    }</pre>
+<p>(index+":"+person2[index]) +"" symbol um use pani marge panurom</p>
+<h1>for in arrays</h1>
+<pre>
+let num=[12,67,89,56,34];
+for(let index in num){
+    console.log(index+":"+num[index]);
+}
+</pre>
+<mark>for in arrays la</mark>
+<p>(index+":"+num[index]) +"" symbol um use pani marge panurom</p>
+<h1>for of arrays</h1>
+<p><mark>OF</mark>ahh arrays la madum than use panuvom</p>
+<pre>
+ <!-- for of arrays -->
+let num1=[12,67,89,56,34];
+for(let x of num1){
+    console.log(x);
+}
+</pre><i>OF na[array la erukura] value ahh entry panum(12,67,89,56,34)</i><br>
+<i>IN na value oda position ahh entry panum [oto4th position]</i>
+<pre>
+<!-- for in arrays -->
+let num2=[12,67,89,56,34];
+for(let x in num2){
+    console.log(x);
+}
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js if,if else,for,while,do while,switch.js"></script>
+</body>
+</html>

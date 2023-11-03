@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit,specificity</title>
+    <style>
+       h1{
+        font-size: 30px;
+       } 
+       h2 {
+        font-size: 1cm;
+    }
+h3{
+    font-size: 5mm;
+}
+p {
+  font-size: 0.6em;
+  line-height: 2em;
+}
+h4{
+    font-size: 20vw;
+}
+h5{
+    font-size: 20vh;
+}
+div {
+  font-size: 150%;
+  border: 1px solid black;
+}
+#h{color: red;}
+.ph{font-size: medium;
+    color: aqua;}
+#demo {color: blue;}
+.test {color: green;} 
+p {color: red;
+;} 
+
+
+    </style>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>my paragraph</h3>
+    <h4>hello</h4>
+    <h5>world</h5>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div>The font-size of this div element is 150%.</div>
+    <p id="h">Hello World!</p>
+   <h1>what is mean by specificity</h1>
+   <p class="ph">specificityis nothing but we give a three tag style for one elements for example inline style,class style, id style, paticular tag calling style means its give more specific improtant is (1.inline style,2.id style,3.class style,4.particular tag style.)</p>
+   <p id="demo" class="test" style="color: deeppink;">Hello World!</p>
+
+
+</body>
+</html>

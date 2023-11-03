@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string search</title>
+</head>
+<body>
+    <h1>String Search </h1>
+    <p>There are 8 types of searchs</p>
+    <ul>
+        <li>String indexOf()</li>
+        <li>string lastIndexOf()</li>
+        <li>string search()</li>
+        <li>string match()</li>
+        <li>string matchAll()</li>
+        <li>string include()</li>
+        <li>string startsWith</li>
+        <li>string endsWith()</li>
+    </ul>
+<h1>String indexOf </h1>
+    <p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+    <p>The position of the first occurrence of "locate" is:</p>
+    <i>example</i><br>
+  <strong>indexOf</strong>=> na namba kudukura string la patticular name ahh call pani athoda position ahh calculate panuvom(atha name vanthu namba kudukura stiring la first name ahh erukanum yenga venunalum erukalam(yethanavathu word ahh kuda erukalam aana first place la erukanum))
+  <pre>let text = "Please locate where 'locate' occurs!";
+       let index = text.indexOf("locate");
+       console.log(index);</pre>
+ Epo ethula locate kura word 2nd place la eruku aana frist word ahh eruku so first ahh erukura locate than yeduthukum sencond ahh erukura locate 4 place la eruku so atha yeduthukathu
+
+ <h1>String lastIndexOf</h1>   
+     <p>The position of the last occurrence of "locate" is:</p>
+     <p>ethula last ahh erukira locate ahh than yeduthukum(athuoda position ahh calculate pani solum)</p>
+     <i>example</i>
+     <pre>let text1 = "Please locate where 'locate' occurs!";
+          let index1 = text1.lastIndexOf("locate");
+          console.log(index1);</pre>
+ Ethula last ahh erukura locate than yeduthukum aana position ahh yepadi calculate panunum na first la eruthu calculate pani last ahh erukura locate yethanavathu position la erukunu calculate panum(atha locate 21 th position ahh eruku)   
+    
+ <h1>Both indexOF()and lastIndexOf</h1>   
+     <p>epo namba kudutha text la (namba kudugatha name ahh search panuna output(-1 return asgum))<mark>return -1 if the text is not found</mark></p>
+     <i>example</i>
+     <pre>let text2 = "Please locate where 'locate' occurs!";
+          let index2= text2.indexOf("John");
+          console.log(index2);</pre>
+  
+ <h1>Both indexOF()and lastIndexOf</h1>   
+     <p>Both methods accept a second parameter as the starting position for the search:</p> 
+     <p>ethula rendavatha erukura locate kura name yethanavathu postion la eruku nu namba calculate panurom athuvum namba oru certain number ahh use pani</p>
+     <i>example</i>
+     <pre>let text3 = "Please locate where 'locate' occurs!";
+          let index3 = text3.indexOf("locate", 15);
+          console.log(index3);</pre>
+ <strong>IndexOf</strong>=>Ethula second ahh erukura perameter ahh (locate)yethanavathu position la erukunu therinchika namba some values kuduthu check panurom ethula rendu locate eruku fist locate(7 position la eruku)second locate(21 position la eruku)
+ yevalo values kuduthalum athu yentha name ahh pointout pani kudukuromo athoda position ahh madum athan calculate panunum antha name yethana place la eruthalum sari
+ (ethu first la eruthu position calculate panuthu)
+ <strong>lastIndexOF</strong>=>methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+ ethu last la eruthu yethanavathu place la erukunu calculate pani solum
+ <pre>let text4 = "Please locate where 'locate' occurs! locate";
+      let index4 = text4.indexOf("locate", 15);
+      console.log(index4);</pre>
+ epo last la eruthu calculate pani locate 7th position la erukunu vanthuruchi
+
+ <h1>string Search()</h1>
+     <p>The search() method returns the position of the first occurrence of a string in a string.</p>
+     <p>The position of the first occurrence of "locate" is:</p>
+ethula yepovum poola first la eruthu position ahh calculate pani yethavathu position ahh erukunu search pani solum(Athan search method)
+     <i>example</i>
+     <pre>let text5 = "Please locate where 'locate' occurs!";
+          let index5 = text5.search("locate");</pre>
+          console.log(index5);
+          <h1>another method of search</h1>
+          <i>example</i>
+          <pre>let text6= "Please locate where 'locate' occurs!";
+               let index6= text6.search(/locate/);
+               console.log(index6);</pre>
+ ethula log panum poothu string la erukura locate ahh namba / method la tharom apadi kuduthalum output correct ahh execute agum              
+<h1>did yo notice</h1>
+     <p>The two methods, indexOf() and search(), are equal?
+     They accept the same arguments (parameters), and return the same value?
+     The two methods are NOT equal. These are the differences:
+     The search() method cannot take a second start position argument.
+     The indexOf() method cannot take powerful search values (regular expressions).
+     You will learn more about regular expressions in a later chapter.</p>
+
+<h1>string match</h1>    
+     <p>The match() method returns an array containing the results of matching a string against a string (or a regular expression).</p>
+     <p>ethula namba kudukura string la log la thara word namba kudutha string la eruka nu search pani antha word ahh print panum </p>
+     <i>example</i>
+     <pre>let text6 = "The rain in SPAIN stays mainly in the plain";
+          const myArr = text6.match("ain");
+          console.log(myArr);</pre>
+<h1>another method</h1>
+     <p>ethula verum string la kuduthakum run agum another method vanthu(/)use pani panuvom athulaiyum same ahh than ans varum</p>
+     <pre>let text8 = "The rain in SPAIN stays mainly in the plain";
+     const  myArr1 = text8.match("main");
+     console.log( myArr1);</pre>
+<h1> string match gobal search method()</h1>
+     <p>Perform a global search for "ain":</p>
+     <p>ethula namba log la kudukura string small letter la erutha small leter ain madum than yeduthukum (athula cspitsl letter la eruthalum yeduthukathu(aana /gi kudutha rendaiyum yeduthukum small,and capital)) </p>
+     <pre>let text9 = "The rain in SPAIN stays mainly in the plain";
+          const myArr1=text9.match(/ain/g);
+          console.log(myArr1);
+     </pre>
+<h1>string match using case-insensitive search</h1>
+     <p>Perform a global, case-insensitive search for "ain"</p>
+ ethula namba kudukura string neraiya orey mathiri name erutha athuvum small la eruku athula oru capital name AIN nu eruku so athiyum print panum
+<pre>let text10 = "The rain in SPAIN stays mainly in the plain";
+      const myArr3=text10.match(/ain/gi);
+      console.log(myArr3);</pre>
+
+<h1>string matchAll()</h1>
+     <p>The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).</p>
+     ethula namba kudukura string la orey mathiri names erutha atha two times madum print panum
+     <pre>let text11 = "I love cats. Cats are very easy to love. Cats are very popular."
+          const iterator = text11.matchAll("Cats");
+          console.log(iterator);</pre>
+   <h1>goblal method()</h1>
+    <p>using(/g)</p>
+    <p>small letter(madum) print pannum </p>
+   <h1>insentive method(/gi)</h1>  
+    <p>capital letter and small letter(rendum) print agum</p>
+
+<h1>string startsWith()</h1>
+    <p>The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:</p>
+epo namba kudukura string la log panura name first la erutha true nu varum illa na false nu varum
+    <pre>
+        let text14 = "Hello world, welcome to the universe.";
+        const name = text14.startsWith("Hello");
+        console.log(name);</pre>
+<h1>find the position in startWith()</h1>
+        <p>ethula namba kudukura name first la erutha true illana false (erutha athoda position ahh varum illana false nu varum )</p>
+     <p>false method</p>
+        <pre>let text16 = "Hello world, welcome to the universe.";
+          const name2=text.startsWith("world", 5);
+          console.log(name2);</pre>
+      <p>true method</p>  
+      <pre>let text16 = "Hello world, welcome to the universe.";
+           const name2=text.startsWith("hello", 5);
+           console.log(name2);</pre> 
+           
+<h1>endsWith() method</h1>         
+     <p>ethula namba kudukura name last la erutha true illana false (erutha athoda position ahh varum illana false nu varum )</p>
+    <pre>let text17 = "John Doe";
+       const name3= text17.endsWith("Doe");
+       console.log(name3);</pre>
+
+<h1>includes() method</h1>
+       <p>true or false than return panum(atha word erutha true illana false) </p>
+       <pre>
+           let word="this is my world";
+           let result12=word.includes("my");
+           console.log(result12);
+       
+       </pre>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//string indexOf
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.indexOf("locate");
+    console.log(index);
+//string lastindexOf
+    let text1 = "Please locate where 'locate' occurs!";
+    let index1 = text1.lastIndexOf("locate");
+    console.log(index1);
+//string la indexOf(),lastIndexOF() la illa tha word ahh find of method
+    let text2 = "anbu moni mano'karthi' abi!";
+    let index2= text2.indexOf("nisha");
+    console.log(index2);   
+// indexof Both methods accept a second parameter as the starting position for the search:
+    let text3 = "Please locate where 'locate' occurs! locate";
+    let index3 = text3.indexOf("locate", 15);
+    console.log(index3);
+// lastindexof 
+    let text4 = "Please locate where 'locate' occurs! locate";
+    let index4 = text4.lastIndexOf("locate", 15);
+    console.log(index4);
+//string search() method
+    let text5 = "Please locate where 'locate' occurs!";
+    let index5 = text5.search("locate");
+    console.log(index5);
+    //other method of search
+    let text6 = "Please locate where 'locate' occurs!";
+    let index6 = text6.search(/locate/);
+    console.log(index6);
+//string match()
+    let text7 = "The rain in SPAIN stays mainly in the plain";
+    const myArr = text7.match("ain");
+    console.log(myArr);
+   //another method()
+    let text8 = "The rain in SPAIN stays mainly in the plain";
+        const  myArr1 = text8.match("main");
+        console.log( myArr1);
+//string match gobal search method()
+      let text9 = "The rain in SPAIN stays mainly in the plain";
+      const myArr2=text9.match(/ain/g);
+      console.log(myArr2);
+//Perform a global, case-insensitive search useing(/i)
+      let text10 = "The rain in SPAIN stays mainly in the plain";
+      const myArr3=text10.match(/ain/gi);
+      console.log(myArr3);
+//matchAll()method
+      let text11 = "I love cats. Cats are very easy to love. Cats are very popular.";
+      const iterator = text11.matchAll("Cats");
+      console.log(iterator);      
+// global method()
+      let text12 = "I love cats. Cats are very easy to love. Cats are very popular.";
+      const iterator1 = text12.matchAll(/Cats/g);
+      console.log(iterator1);
+//insensitive method()
+      let text13 = "I love cats. Cats are very easy to love. Cats are very popular.";
+      const iterator2 = text13.matchAll(/Cats/gi);
+      console.log(iterator2);
+//startsWith() method true value
+      let text14 = "Hello world, welcome to the universe.";
+      const name = text14.startsWith("Hello");
+      console.log(name);
+//startsWith() method false value
+      let text15 = "Hello world, welcome to the universe.";
+      const name1=text15.startsWith("world")
+      console.log(name1);
+      //A start position for the search can be specified:(startWith(false))
+      //false method
+      let text16 = "Hello world, welcome to the universe.";
+      const name2=text16.startsWith("world", 5);
+      console.log(name2);
+      //true method
+      let text17 = "Hello world, welcome to the universe.";
+      const name3=text17.startsWith("world", 6);
+      console.log(name3);
+//endsWith()
+      let text18 = "John Doe";
+      const name4 =text18.endsWith("Doe");
+      console.log(name3);
+// endWith()using position method
+      let text19 = "Hello world, welcome to the universe.";
+      const name5=text19.endsWith("world", 11);
+      console.log(name5);
+//include() method
+let word="this is my world";
+    let result12=word.includes("my");
+    console.log(result12);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+</script>
+</body>
+</html>

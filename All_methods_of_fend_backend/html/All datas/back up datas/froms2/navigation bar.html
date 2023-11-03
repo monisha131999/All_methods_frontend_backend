@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <style>
+        *{
+           margin:0;
+           padding:0;
+         }
+        ul li{
+            float:left;
+            list-style-type: none;
+            width: 250px;
+            background-color:rgb(77, 233, 220);
+            text-align: center;
+            margin: 17px;
+            padding: 10px 0;
+        }
+        ul li a{
+            display: inline-block;
+            text-decoration:none;
+           color:white;
+           padding: 20px,0;
+           background-color: deeppink;
+        }
+        ul li:hover{
+            background-color: deeppink;
+        }
+ ul p{
+    margin: 10px;
+}
+.container ul ul{
+    display: none;
+}
+.sub-container li:hover .sub-sub-container{
+    display: block;
+}
+ul ul li:nth-child(3):hover .Moni{
+    display: block;
+}
+.container ul ul li{
+    position: relative;
+    background-color:chartreuse;
+}
+.container ul ul ul li{
+background-color:deeppink ;
+}
+.container ul ul ul li:hover{
+    background-color:chartreuse ;
+}
+.container ul ul ul{
+    position: absolute;
+    left: 233px;
+    top: 20px;
+    }
+    div.container img  {
+        float: left;
+        width: 160px;
+    }
+    p{      
+      text-align: justify;
+      border: 2px solid black;
+      border-width: 5px;
+       }
+     
+</style>
+</head>
+<body>
+   <div class="container">
+    <ul class="sub-container">
+    <li><a href="">Home</a>
+    <ul class="sub-sub-container">
+        <li><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a>
+            <ul class="Moni">
+                <li><a href="">link4</a></li>
+                <li><a href="">link5</a></li>
+                <li><a href="">link6</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+    <li><a href="">Menu</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Help</a>
+</li><br><br><br><br><br>
+<div class="container">
+<img src="AI.image.jpg" alt="AI img">
+<p>Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment. Although there are no AIs that can perform the wide variety of tasks an ordinary human can do, some AIs can match humans in specific tasks Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa voluptate labore nemo dolorem, dolores sit ad rerum laboriosam voluptates culpa saepe dolorum sapiente illo. Totam ex corrupti obcaecati quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam at, perspiciatis, alias culpa odit nostrum deserunt, itaque ratione recusandae suscipit quaerat similique repellendus quia sed ad quam maxime nulla laudantium!</p></ul>
+</div>
+</div>
+</body>
+</html>

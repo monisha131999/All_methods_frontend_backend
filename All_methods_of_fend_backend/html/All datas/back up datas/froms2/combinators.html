@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        div p{
+            background-color: aqua; 
+            color: red;
+        }
+        div > div{
+            background-color: pink;
+            color: black;
+        }
+        div + b{
+            background-color: blue;
+            color: red;
+        }
+        div ~ span{
+            background-color: green;
+            color: black;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant selector</h1>
+<div>
+    <p>descendant sector is defind as if how many tags under the div container.if we give the style like color,font size like that it will be apply all the div tags.if in case it have any parent tag inside under div container tags.its also appy the styles </p>
+   <section> <p>good</p></section>
+    <p>bad</p>
+    <p>comman</p>
+</div>
+<h1>child selector</h1>
+<div>
+    <div >child selector is nothing but(we use the symbols > to determain the tages),if how  many tags under the div container,if we give the style  like color,font size like that it will be apply all the div tags.if in case it have any parent tag inside under div container tags.that tag can't be accept the styles </div>
+    <section> <div>good</div></section>
+    <div>bad</div>
+    <div>comman</div>
+</div>
+<h1> adjacent sibiling selector</h1>
+<div>
+<b>Adjecent selector is nothing but(we usethe symbols + to determain the tages) if how many tags outer the div container.if we give the style like color,font size like that it will be apply the <mark>first element of the  div tags</mark></b></div>
+<b>good </b>
+<b>bad</b>
+<div><b>comman</b></div>
+<b>data science</b>
+<b>computer science</b>
+<h1> genteral sibiling sector</h1>
+<div>
+    <span> gentral sibiling tag is nothing but (we usethe symbols ~ to determain the tages) if how many tags outer the div container.if we give the style like color,font size like that it will be apply <mark>all the div tags</mark></span>
+</div>
+<span>good </span>
+<span>bad</span>
+<span>comman</span><span>symbols</span>
+</body>
+</html>

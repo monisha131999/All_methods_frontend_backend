@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+.all{
+    display: flex;
+    align-items: center;
+}
+.all{
+    padding: 10px 2%;
+    justify-content: space-between;
+    background: white;
+    position:sticky;
+    top:0;
+    z-index: 10;
+    height:8vh ;
+}
+.items-rigth img{
+    width: 25px;
+    margin-right: 25px;
+}
+.search-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.search-middle .search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+ background: transparent;
+}
+/*-------- sidebar-------- */
+.sidebar{
+background: #fff;
+    width:15% ;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+.shortcut-links a img{
+    width: 30px;
+    margin-right: 20px;
+}
+.shortcut-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+/* .shortcut1{
+    display: none;
+} */
+/* .top:hover .shortcut1{
+    display: block;
+} */
+
+/* -------main------- */
+.container{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width:1200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.data{
+   display: grid;  
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px; 
+    margin-top: 15px;
+}
+.video-list.thumnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.video-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.video-list.flex-div img{
+width:35px;
+margin-right: 10px;
+border-radius:50;
+}
+.video-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.video-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+ .top{
+    transition:4s;
+    transition-delay:3s;
+ }   
+ .top:hover{
+    transform: scale(1.2,1.2);
+} 
+.all{
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+}
+.scroll{
+  overflow-y:scroll;
+  }
+  
+</style> 
+</head>
+<body>
+<div class="all">
+<div class="flex-div-left all">
+    <img class="top"src="three lines.png"width="25px"></a></li>
+    <img src="youtube.png" alt="youtube" width="100px"></a></li>
+</div>
+  <div class="search-middle all">
+    <div class="search-box all">
+    <input type="search"placeholder="search">
+    <img src="search.png"width="30px">
+</div>
+</div>
+<div class="items-rigth">
+    <img src="microphone.jpeg" width="30px"></a></li>
+    <img src="create.png"width="30px"></a></li>
+    <img src="bell.jpeg"width="30px"></a></li>
+    <img src="moni.jpeg"width="30px">
+  </div>
+</div>
+
+<!-----sidebar ------->
+<div class="sidebar">
+<div class="shortcut-links">
+        <a href=""><img src="Home.jpeg"width=30px></a><p>Home</p>
+        <a href=""><img src="shorts.jpeg"width="40px"></a><p>Shorts</p>
+        <a href=""><img src="sub4.jpeg" width="35px"></a><p>subscription</p>
+        <a href=""><img src="libary.jpeg"width="65px"></a><p>libary</p>
+<div class="scroll">
+        <div class="shortcut1">
+            <a href=""><img src="Home.jpeg"width=30px>Home</a>
+            <a href=""><img src="shorts.jpeg"width="40px">Shorsts</a>
+            <a href=""><img src="sub4.jpeg" width="35px">subscription</a>
+            <hr>
+            <a href=""><img src="libary.jpeg"width="65px">libary</a>
+            <a href=""><img src="likes.jpeg"width="30px">History</a>
+            <a href=""><img src="your video.jpeg"width="30px">video</a>
+            <a href=""><img src="watch-later2.webp"width="30px">watch later</a>
+            <a href=""><img src="History.jpeg"width=30px >likes</a>
+            <h4>subscription</h4>
+            <a href=""><img src="sunnews.png"width="30px">sun news</a>
+            <a href=""><img src="polimernews.jpg"width="30px">Polimer news</a>
+            <a href=""><img src="thanthi tv.png" width="30px">thanthi tv</a>
+            <a href=""><img src="puthiya thalaimurai.png" width="30px">puthiya thalaimurai</a>
+            <a href=""><img src="sathiyam tv.jpg" width="30px">sathiyam tv</a>
+            <a href=""><img src="win news.jpg" width="30px">win news</a>
+            <a href=""><img src="vijai tv.jpg" width="30px">vijai tv</a>
+            <a href=""><img src="zee tamil tv.jpg" width="30px">zee tamil</a>
+            <a href=""><img src="suntv.webp" width="30px">sun tv</a>
+            <a href=""><img src="kalainar tv.jpg" width="30px">kalainar tv</a>
+            <hr>
+            <h4>Expore</h4>
+            <a href=""><img src="treanding.png"width="20px">Treading</a>
+            <a href=""><img src="shopping.jpg"width="35px">Shopping</a>
+            <a href=""><img src="music.png" width="20px">Music</a>
+            <a href=""><img src="movie.webp" width="35px">Movie</a>
+            <a href=""><img src="live.png" width="20px">Live</a>
+            <a href=""><img src="gaming.png" width="20px">Gaming</a>
+            <a href=""><img src="news.png" width="20px">News</a>
+            <a href=""><img src="sports.webp" width="20px">Sports</a>
+            <a href=""><img src="learning.png" width="15px">Learning</a>
+            <a href=""><img src="fashion.jpg" width="20px">Fashion & Beauty</a>
+<hr>
+            <a href=""><img src="setting.webp" width="60px">Setting</a>
+            <a href=""><img src="report history.png" width="60px">Report history</a>
+            <a href=""><img src="help.png" width="15px">Help</a>
+            <a href=""><img src="send feedback.png" width="20px">Send feedback</a>
+       </div> 
+  </div>
+</div>
+</div>
+   <!-- -----------main--------------        -->
+   <div class="container">
+    <div class="banner">
+        <img src="beach1.jpg">
+    </div>
+    <div class="data">
+    <div class="list-container">
+       <div class="video-list">
+       <a href=""><img class="top"src="beach1.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>
+          <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div> 
+    </div>
+    <div class="video-list">
+        <a href=""><img class="top"src="beach2.webp" class="thumnail1"width="251px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img class="top" src="beach3.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img class="top"src="beach4.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views&bull; 3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img class="top"src="beach5.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img class="top"src="beach6.jpg" class="thumnail1"width="260px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views&bull; 3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+       <a href=""><img class="top"src="moon1.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img class="top"src="moon2.jpg" class="thumnail1"width="333px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views&bull; 3 days</p>
+        </div>
+        </div>
+       </div><div class="video-list">
+        <a href=""><img  class="top"src="tom1.jpg" class="thumnail1"width="250px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div>
+       <div class="video-list">
+        <a href=""><img class="top"src="tom2.jpg" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull; 3 days</p>
+        </div>
+        </div>
+       </div>
+    <div class="video-list">
+      <a href=""><img class="top"src="falls1.cms" class="thumnail1"width="280px"></a>
+        <div class="flex-div">
+            <img src="moni.jpeg"width=40px>
+            <div class="video-info">
+          <a href="">A best turist place u must visit it</a>      
+            <p>More turisite place</p>
+            <p>13k views &bull;3 days</p>
+        </div>
+        </div>
+       </div>
+       <div class="video-list">
+        <a href=""><img class="top"src="bird.webp" class="thumnail1"width="250px"></a>
+          <div class="flex-div">
+              <img src="moni.jpeg"width=40px>
+              <div class="video-info">
+            <a href="">A best turist place u must visit it</a>      
+              <p>More turisite place</p>
+              <p>13k views &bull;3 days</p>
+          </div>
+          </div>
+         </div>
+         <div class="video-list">
+            <a href=""><img class="top"src="husky.image copy.jpg" class="thumnail1"width="200px" hegith="50px"></a>
+              <div class="flex-div">
+                  <img src="moni.jpeg"width=40px>
+                  <div class="video-info">
+                <a href="">A best turist place u must visit it</a>      
+                  <p>More turisite place</p>
+                  <p>13k views &bull;3 days</p>
+              </div>
+              </div>
+             </div><div class="video-list">
+                <a href=""><img class="top"src="rose5.webp" class="thumnail1"width="290px"></a>
+                  <div class="flex-div">
+                      <img src="moni.jpeg"width=40px>
+                      <div class="video-info">
+                    <a href="">A best turist place u must visit it</a>      
+                      <p>More turisite place</p>
+                      <p>13k views &bull;3 days</p>
+                  </div>
+                  </div>
+                 </div><div class="video-list">
+                    <a href=""><img class="top"src="rose4.jpeg" class="thumnail1"width="280px"></a>
+                      <div class="flex-div">
+                          <img src="moni.jpeg"width=40px>
+                          <div class="video-info">
+                        <a href="">A best turist place u must visit it</a>      
+                          <p>More turisite place</p>
+                          <p>13k views &bull;3 days</p>
+                      </div>
+                      </div>
+                     </div><div class="video-list">
+                        <a href=""><img class="top"src="rose3.jpg" class="thumnail1"width="330px"></a>
+                          <div class="flex-div">
+                              <img src="moni.jpeg"width=40px>
+                              <div class="video-info">
+                            <a href="">A best turist place u must visit it</a>      
+                              <p>More turisite place</p>
+                              <p>13k views &bull;3 days</p>
+                          </div>
+                          </div>
+                         </div><div class="video-list">
+                            <a href=""><img class="top"src="rose2.webp" class="thumnail1"width="280px"></a>
+                              <div class="flex-div">
+                                  <img src="moni.jpeg"width=40px>
+                                  <div class="video-info">
+                                <a href="">A best turist place u must visit it</a>      
+                                  <p>More turisite place</p>
+                                  <p>13k views &bull;3 days</p>
+                              </div>
+                              </div>
+                             </div><div class="video-list">
+                                <a href=""><img class="top"src="rose1.jpg" class="thumnail1"width="150px"></a>
+                                  <div class="flex-div">
+                                      <img src="moni.jpeg"width=40px>
+                                      <div class="video-info">
+                                    <a href="">A best turist place u must visit it</a>      
+                                      <p>More turisite place</p>
+                                      <p>13k views &bull;3 days</p>
+                                  </div>
+                                  </div>
+                                 </div>
+    </div> 
+</div>
+   
+
+
+
+
+              
+ </body>
+</html>

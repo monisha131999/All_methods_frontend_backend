@@ -1,0 +1,19 @@
+#ul{ 
+    display: none;
+}
+
+/* #btm :hover{
+    display: block;
+}*/
+#moni{
+    border: 2px dashed black;
+    height: 100px;
+    width: 250px;
+    list-style-type: none;
+    margin-left: 650px;
+    background-color: rgb(7, 199, 233);
+    font-size: 20px;
+}
+body{
+background-image:url('image5.jpg');
+}

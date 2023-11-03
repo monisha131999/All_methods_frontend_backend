@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+</ul>
+
+    <script>
+
+var piosData = [{
+  id: 'a',
+  address: '7886 Dublin Blvd',
+  city: 'Dublin, ',
+  state: 'CA ',
+  zip: '94568'
+}, {
+  id: 'b',
+  address: '1 Stoneridge Mall Space',
+  city: 'Pleasanton, ',
+  state: 'CA ',
+  zip: '94568'
+}, {
+  id: 'c',
+  address: '1120 Stoneridge Mall Drive',
+  city: 'Pleasanton, ',
+  state: 'CA ',
+  zip: '94568'
+}];
+
+piosData.forEach(function(pio) {
+  pios(pio);
+});
+
+function pios(pio) {
+  var div = document.createElement('div');
+  div.setAttribute('id', pio.id);
+  div.innerHTML = pio.address + '<br />' + pio.city + pio.state + pio.zip;
+  document.body.appendChild(div);
+}
+// You can use document.createElement to create a new element of any type and then append it to body using Node.appendChild()
+
+// function pios(iID, Address, City, State, Zip)
+// {
+//    var div = document.createElement('div');
+//    div.setAttribute('id', iID);
+//    div.innerHTML = Address + '<br />' + City + State + Zip;
+//    document.body.appendChild(div);   
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

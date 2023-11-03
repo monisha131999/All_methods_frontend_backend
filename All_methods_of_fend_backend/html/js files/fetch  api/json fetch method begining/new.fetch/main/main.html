@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+
+<!-- footer -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popping',sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-bar{
+    width: 100%;
+    height: 4rem;
+    background-color: #eee;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0px,20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-solid{
+    color: red;
+    margin-right: 10px;
+}
+.header{
+    width: 100%;
+    height: 200px; 
+    background-color: red;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar p{
+ font-size: 30px;
+ font-weight: bold;
+ color: white;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+    padding: 7px 15px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: red;
+    border-radius: 3px;
+}
+.navbar-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown{
+    width: 130px;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+}
+select{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 7px 10px 7px 0px;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+select:hover{
+    color:#333;
+}
+.search{
+    width: 500px;
+    background-color: white;
+    height: 45px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.search input{
+    width: 440px;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+    font-size: 18px;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.glass:hover{
+  color: blue;
+  cursor: pointer ;
+}
+
+/*  */
+.item{
+    box-shadow:0 0 4px 3px pink ;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2em;
+}
+
+
+/* add to cart foolder */
+.container{
+    display:flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display:grid;
+    grid-template-columns: repect(2,1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width:40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 850px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top:1px solid #333;
+}
+
+/* footer */
+html {
+    background-color: #eaf0f2;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 300px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+        
+
+        
+
+</style>
+</head>
+<body>
+    <div class="top-bar">
+        <p><i class="fa-solid fa-envelope"> monianbu380@gmail.com</i></p>
+        <p><i class="fa-solid fa-phone">  9994048621</i></p>
+    </div>
+     <div class="header">
+        <div class="navbar">
+            <p><i>Shop</i>-Trends</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select name="">
+                    <option value="1">Categories</option>
+                    <option value="2">New</option>
+                    <option value="3">Important</option>
+                    <option value="4">Local</option>
+                </select>
+            </div>
+            <div class="search" id="searchbar">
+                <input type="search"   id="filterInput"placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+            </div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    </div>
+    <!-- <div class="container">
+        <div id="root">
+            <div class="sidebar">
+                <div class="head"><p>My cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20" id="products-100">
+
+    </div>
+    
+<script>
+    let grid = document.querySelector(".products");
+let filterInput = document.getElementById("filterInput");
+
+fetch('https://fakestoreapi.com/products')
+    .then(res => res.json())
+    .then(json =>{
+
+        // iterating products
+        for (let value of json){
+            addElement(grid, value)
+        }
+        
+    });
+
+
+// add event listener
+filterInput.addEventListener('keyup', filterProducts);
+
+// callback function 
+function filterProducts(){
+    let filterValue = filterInput.value.toUpperCase();
+    let item = grid.querySelectorAll('.item')
+    // console.log(filterValue);
+
+    for (let i = 0; i < item.length; i++){
+        let span = item[i].querySelector('.title');
+
+        if(span.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+            item[i].style.display = "initial";
+        }else{
+            item[i].style.display = "none";
+        }
+
+    }
+}
+
+
+
+// get value from the api create dynamic element
+function addElement(appendIn, value){
+    let div = document.createElement('div');
+    div.className = "item justify-self-center";
+
+    let { image, title, description, category, price} = value;
+
+    div.innerHTML = `
+            <img src="${image}" class="bg-cover img mx-auto" alt="img1">
+            <div class="text-center py-3 font-poppins">
+                <h1 class="text-lg title">${title}</h1>
+                <a href="#" class="block"><span class="text-sm text-red-400">${category}</span></a>
+                <span class="block py-3">$<span class="text-md">${price}</span></span>
+                <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md"onclick='addtocart'>Buy Now</button>
+                <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md"onclick='addtocart'>Add to cart</button>
+
+                </div>`;
+  appendIn.appendChild(div);
+}
+
+// const Categories=[...new set(products.map((item)=>{
+//         return item}))]
+//          let i=0;
+//    document.getElementById('root').innerHTML=Categories.map((item)=>
+//     {
+//       var{image,title,price} =item;
+//         return(
+//        `<div class='box'>
+//           <div class='img-box'>
+//           <img class='images'src="${image}"></img>
+//           </div>
+//         <div class='bottom'>
+//               <p>"${title}"</p>
+//                      <h2>$ "${price}".00</h2>`+
+//          "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
+//                      `</div>
+//                      </div>`
+//                  )
+//         }).join("")
+    </script>
+
+<!-- <h2>Responsive <span>Footer</span> </h2> -->
+</header>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Shop<span>Trends</span></h3>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Contact</a>
+            |
+            <a href="#">Blog</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2021 <strong>ShopTrends</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Tamilnadu</span>
+                Delhi</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 99**4**628</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:monianbu380@gmail.com">xyz@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>ShopTrends</strong> is a shopping website where you can find more creative design of dress 
+            and
+            things and Products
+            so buy the products with our website.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

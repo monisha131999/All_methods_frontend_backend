@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="e-commes.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="top-bar">
+        <p><i class="fa-solid fa-envelope"> monianbu380@gmail.com</i></p>
+        <p><i class="fa-solid fa-phone">  9994048621</i></p>
+    </div>
+     <div class="header">
+        <div class="navbar">
+            <p>Ecommerce</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select name="">
+                    <option value="1">Categories</option>
+                    <option value="2">New</option>
+                    <option value="3">Important</option>
+                    <option value="4">Local</option>
+                </select>
+            </div>
+            <div class="search" id="searchbar">
+                <input type="search"   id="filterInput"placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+            </div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    </div>
+    <div class="container">
+        <div id="root">
+            <div class="sidebar">
+                <div class="head"><p>My cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart tags -->
+     <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20" id="products-100">
+    
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container mx-auto">
+        <h1 class="font-poppins text-center text-3xl font-bold pt-24">Filter Products</h1>
+    </div> -->
+
+    <!-- form -->
+    <!-- <form class="text-center py-4">
+        <input type="text" class="placeholder-gray-800 focus:outline-none bg-gray-200 text-gray-800 w-2/4 py-2 px-3 font-poppins rounded-md" id="filterInput" placeholder="Filter">        
+    </form> -->
+
+    <!-- product grid -->
+    <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20">
+        <!-- <div class="item justify-self-center"id="cards">
+            <img src="./assets/img3.png" class="bg-cover img" alt="img1">
+            <div class="text-center py-3 font-poppins">
+                <h1 class="text-lg title">Product Title</h1>
+                <a href="#" class="block"><span class="text-sm text-red-400">Category</span></a>
+                <span class="block py-3">$<span class="text-md">12.99</span></span>
+                <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">Buy Now</button>
+            </div>
+        </div> -->
+    </div>
+<script src="./e-commes .js"></script>
+</body>
+</html>
